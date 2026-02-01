@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NavLink from "./NavLink";
 
 type MenuType = {
   title: string;
@@ -7,9 +8,10 @@ type MenuType = {
 };
 
 const menu: MenuType[] = [
+  { title: "Home", href: "/" },
   {
-    title: "Content creation",
-    href: "/content",
+    title: "Global Cinema Creation",
+    href: "/creation",
     subMenu: [
       { title: "NGC IPs", href: "/ips" },
       { title: "Outsider's IP projects", href: "/ip-projects" },
@@ -17,7 +19,7 @@ const menu: MenuType[] = [
     ],
   },
   {
-    title: "International services",
+    title: "International VFX",
     href: "/international",
     subMenu: [
       { title: "Our pipeline", href: "/pipeline" },
@@ -25,23 +27,22 @@ const menu: MenuType[] = [
       { title: "VFX/CG Outsource vendors", href: "/vendors" },
     ],
   },
-  { title: "Investors", href: "/investors" },
-  { title: "Media announcements", href: "/media-annoucements" },
-  { title: "IPs Distribution and OTT", href: "/ott" },
-  { title: "VFX Careers & Internship", href: "/career" },
+  { title: "Investors & Partners", href: "/investors" },
+  { title: "Media", href: "/media-annoucements" },
+  { title: "IPs Distribution & OTT", href: "/ott" },
+  { title: "Career", href: "/career" },
 ];
 
 export default function NavBar() {
   return (
-    <nav className="bg-white/60 flex justify-end items-center p-5 font-bold text-sm text-gray-600 gap-5">
-      {menu.map((menuItem) => (
-        <div key={menuItem.title} className="relative group">
-          <Link
-            href={menuItem.href}
-            className="hover:text-red-500 hover:border-red-500 border-2 border-transparent px-2 py-1 rounded-md transition-all duration-300 ease-in-out hover:scale-110 inline-block"
-          >
-            {menuItem.title.toUpperCase()}
-          </Link>
+    <nav className="bg-white/60 flex justify-end p-5 pt-10 font-bold text-sm text-gray-600 gap-5">
+      {menu.map((menuItem, idx) => (
+        <div
+          key={menuItem.title}
+          className="relative group nav-item opacity-0"
+          style={{ animationDelay: `${idx * 0.18}s` }}
+        >
+          <NavLink menuItem={menuItem} key={menuItem.title} />
 
           {menuItem.subMenu && (
             <div className="absolute top-full left-0 mt-2 w-64 bg-white shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
