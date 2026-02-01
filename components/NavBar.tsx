@@ -35,7 +35,7 @@ const menu: MenuType[] = [
 
 export default function NavBar() {
   return (
-    <nav className="bg-white/60 flex justify-end p-5 pt-10 font-bold text-sm text-gray-600 gap-5">
+    <nav className="bg-white/60 flex justify-end items-center p-8 font-bold text-sm text-gray-600 gap-5">
       {menu.map((menuItem, idx) => (
         <div
           key={menuItem.title}
