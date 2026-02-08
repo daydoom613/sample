@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main>
-      <section className="banner h-screen bg-[url('/MainPage_BG_v01.png')] bg-cover bg-center"></section>
+      <section className="home-banner h-screen bg-cover bg-center"></section>
       <section className="py-24 px-6 max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
