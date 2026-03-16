@@ -29,7 +29,7 @@
 .hero-overlay {
   background: radial-gradient(
     circle at center,
-    rgba(19, 19, 236, 0.1) 0%,
-    rgba(5, 5, 10, 0.8) 100%
+    rgba(43, 43, 45, 0.1) 0%,
+    rgb(5, 5, 10) 100%
   );
 }

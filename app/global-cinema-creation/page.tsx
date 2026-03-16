@@ -1,16 +1,11 @@
-import {
-  Clapperboard,
-  Disc3,
-  NotebookPen,
-  SquareArrowOutUpRight,
-} from "lucide-react";
+import { SquareArrowOutUpRight } from "lucide-react";
 
 export default function page() {
   return (
     <>
       <section className="relative h-[80vh] w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 hero-overlay z-10"></div>
+          <div className="absolute inset-0 hero-overlay z-10 backdrop-blur-sm"></div>
           <div
             className="w-full h-full bg-[url('/hero-global.avif')] bg-cover bg-center"
             data-alt="Cinematic background showing a film set with professional lighting"
@@ -24,7 +19,7 @@ export default function page() {
             Global Cinema <br />
             Creation
           </h1>
-          <p className="text-lg lg:text-xl text-slate-300 mb-10 leading-relaxed font-light">
+          <p className="text-lg lg:text-xl text-white mb-10 leading-relaxed font-semibold">
             The heart of NGC filmmaking. We craft boundary-pushing stories and
             visionary experiences that resonate with diverse audiences across
             every continent.
@@ -62,9 +57,8 @@ export default function page() {
                 NGC Originals
               </h3>
               <p className="text-slate-300 text-sm leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Proprietary stories born within our walls. Focused on
-                auteur-driven projects that define the NGC brand&apos;s artistic
-                DNA.
+                Stories created in-house that showcase the unique creativity and
+                vision of NGC.
               </p>
               <button className="flex items-center gap-2 text-white font-bold text-sm hover:text-primary transition-colors">
                 Explore Slate {"->"}
@@ -85,8 +79,8 @@ export default function page() {
                 Co-Productions
               </h3>
               <p className="text-slate-300 text-sm leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Highlighting international collaborations and cross-border
-                storytelling excellence with world-className studios.
+                Partnering with international studios to bring great stories to
+                life across borders.
               </p>
               <button className="flex items-center gap-2 text-white font-bold text-sm hover:text-primary transition-colors">
                 Joint Ventures {"->"}
@@ -107,8 +101,8 @@ export default function page() {
                 Partner IPs
               </h3>
               <p className="text-slate-300 text-sm leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                Managing and adapting legendary franchises. We bring fresh
-                perspectives to established global intellectual properties.
+                Bringing fresh ideas and creativity to well-known global
+                franchises.
               </p>
               <button className="flex items-center gap-2 text-white font-bold text-sm hover:text-primary transition-colors">
                 Portfolio {"->"}
@@ -128,58 +122,62 @@ export default function page() {
             modern cinema. Join our ecosystem of elite storytellers.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
-            <div className="p-10 rounded-2xl group bg-red-500 transition-all duration-300">
-              <div className="size-14 rounded-xl bg-white flex items-center justify-center text-red-600 mb-8 group-hover:scale-110 transition-transform">
-                <NotebookPen />
+            <div className="rounded-2xl group bg-[url('https://www.dorrancepublishing.com/wp-content/uploads/2019/01/Writing-Type-2.jpg')] bg-no-repeat bg-cover transition-all duration-300 overflow-hidden">
+              <div className="backdrop-blur-[2px] h-full p-10 flex flex-col justify-between">
+                <h4 className="text-xl font-bold text-white mb-4">Writers</h4>
+                <div>
+                  <p className="text-white text-sm leading-relaxed mb-8">
+                    Scripting the future. We collaborate with bold voices
+                    capable of weaving complex narratives for global audiences.
+                  </p>
+                  <a
+                    className="text-xs font-bold uppercase tracking-widest text-white flex items-center gap-2 group-hover:gap-3 transition-all"
+                    href="#"
+                  >
+                    Submit Script
+                    <SquareArrowOutUpRight />
+                  </a>
+                </div>
               </div>
-              <h4 className="text-xl font-bold text-white mb-4">Writers</h4>
-              <p className="text-gray-200 text-sm leading-relaxed mb-8">
-                Scripting the future. We collaborate with bold voices capable of
-                weaving complex narratives for global audiences.
-              </p>
-              <a
-                className="text-xs font-bold uppercase tracking-widest text-white flex items-center gap-2 group-hover:gap-3 transition-all"
-                href="#"
-              >
-                Submit Script
-                <SquareArrowOutUpRight />
-              </a>
             </div>
-            <div className="p-10 rounded-2xl group bg-red-500 transition-all duration-300">
-              <div className="size-14 rounded-xl bg-white flex items-center justify-center text-red-600 mb-8 group-hover:scale-110 transition-transform">
-                <Clapperboard />
+            <div className="rounded-2xl group bg-[url('https://tse1.mm.bing.net/th/id/OIP.pzMud9IrVhcKmX453G4FRQHaDt?rs=1&pid=ImgDetMain&o=7&rm=3')] bg-no-repeat bg-cover transition-all duration-300 overflow-hidden">
+              <div className="backdrop-blur-[2px] p-10 h-full flex flex-col justify-between">
+                <h4 className="text-xl font-bold text-white mb-4">Directors</h4>
+                <div>
+                  <p className="text-gray-200 text-sm leading-relaxed mb-8">
+                    Visualizing the unseen. We provide the resources and
+                    creative freedom for directors to manifest their unique
+                    aesthetic.
+                  </p>
+                  <a
+                    className="text-xs font-bold uppercase tracking-widest text-white flex items-center gap-2 group-hover:gap-3 transition-all"
+                    href="#"
+                  >
+                    Showcase Reel
+                    <SquareArrowOutUpRight />
+                  </a>
+                </div>
               </div>
-              <h4 className="text-xl font-bold text-white mb-4">Directors</h4>
-              <p className="text-gray-200 text-sm leading-relaxed mb-8">
-                Visualizing the unseen. We provide the resources and creative
-                freedom for directors to manifest their unique aesthetic.
-              </p>
-              <a
-                className="text-xs font-bold uppercase tracking-widest text-white flex items-center gap-2 group-hover:gap-3 transition-all"
-                href="#"
-              >
-                Showcase Reel
-                <SquareArrowOutUpRight />
-              </a>
             </div>
-            <div className="p-10 rounded-2xl group bg-red-500 transition-all duration-300">
-              <div className="size-14 rounded-xl bg-white flex items-center justify-center text-red-600 mb-8 group-hover:scale-110 transition-transform">
-                <Disc3 />
+            <div className="rounded-2xl group bg-[url('https://tse4.mm.bing.net/th/id/OIP.4r389B9YjPm05373kflaEQHaFI?rs=1&pid=ImgDetMain&o=7&rm=3')] bg-no-repeat bg-cover  overflow-hidden transition-all duration-300">
+              <div className="backdrop-blur-[2px] p-10 flex flex-col justify-between h-96">
+                <h4 className="text-xl font-bold text-white mb-4">
+                  Music Creators
+                </h4>
+                <div>
+                  <p className="text-gray-200 text-sm leading-relaxed mb-8">
+                    Composing the soul of cinema. Our sonic landscapes are as
+                    vital as our visual ones. Join our scoring studio.
+                  </p>
+                  <a
+                    className="text-xs font-bold uppercase tracking-widest text-white flex items-center gap-2 group-hover:gap-3 transition-all"
+                    href="#"
+                  >
+                    Join Scoring Studio
+                    <SquareArrowOutUpRight />
+                  </a>
+                </div>
               </div>
-              <h4 className="text-xl font-bold text-white mb-4">
-                Music Creators
-              </h4>
-              <p className="text-gray-200 text-sm leading-relaxed mb-8">
-                Composing the soul of cinema. Our sonic landscapes are as vital
-                as our visual ones. Join our scoring studio.
-              </p>
-              <a
-                className="text-xs font-bold uppercase tracking-widest text-white flex items-center gap-2 group-hover:gap-3 transition-all"
-                href="#"
-              >
-                Join Scoring Studio
-                <SquareArrowOutUpRight />
-              </a>
             </div>
           </div>
         </div>

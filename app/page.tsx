@@ -16,12 +16,11 @@ export default function Home() {
                 Digital Excellence
               </span>
             </h2>
-            <p className="text-gray-600 text-lg leading-relaxed">
-              At Nature Guru Creations, we don&apos;t just film wildlife; we
-              capture the soul of the natural world. Our studio combines
-              award-winning cinematography with industry-leading visual effects
-              to tell stories that bridge the gap between reality and
-              imagination.
+            <p className="text-gray-600 text-lg leading-relaxed text-justify">
+              Nature Guru Creations is a filmmaking studio focused on creating
+              original films and series for global audiences, while also
+              delivering world-class VFX & CG execution for international
+              productions through a robust, engineering-driven pipeline.
             </p>
             <div className="grid grid-cols-2 gap-8 pt-4">
               <div className="border-l-4 border-cyan-600 pl-6">
@@ -71,7 +70,7 @@ export default function Home() {
               alt="The Last Jungle"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               data-alt="Movie poster for The Last Jungle featuring a lion in high contrast"
-              src="/poster3.png"
+              src="/poster_1.png"
               width={50}
               height={50}
             />
@@ -96,7 +95,7 @@ export default function Home() {
               alt="Apex Predator"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               data-alt="Movie poster for Apex Predator showing a Great White Shark underwater"
-              src="/poster2.png"
+              src="/poster_2.png"
               width={50}
               height={50}
             />
@@ -121,7 +120,7 @@ export default function Home() {
               alt="Wild Echoes"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               data-alt="Movie poster for Wild Echoes featuring an owl in flight at night"
-              src="/poster1.png"
+              src="/poster_3.png"
               width={50}
               height={50}
             />
@@ -150,7 +149,7 @@ export default function Home() {
               alt="VFX Rendering"
               className="w-full h-full object-cover"
               data-alt="Abstract 3D particle landscape representing VFX technology"
-              src="/computer.png"
+              src="/vfxPoster.jpg"
               width={50}
               height={50}
             />
@@ -220,7 +219,10 @@ export default function Home() {
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="border border-white/5 rounded-xl overflow-hidden hover:border-primary/30 transition-all group shadow-2xl">
-            <div className="h-48 overflow-hidden">
+            <div className="h-48 overflow-hidden relative">
+              <span className="absolute top-4 left-4 bg-cyan-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest shadow-lg z-10">
+                Industry News
+              </span>
               <Image
                 alt="Awards News"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -232,9 +234,6 @@ export default function Home() {
             </div>
             <div className="p-6">
               <div className="flex justify-between items-center mb-4">
-                <span className="text-[10px] font-bold text-cyan-500 uppercase tracking-widest">
-                  Industry News
-                </span>
                 <span className="text-[10px] text-gray-600 uppercase tracking-widest">
                   Oct 12, 2023
                 </span>
@@ -250,7 +249,10 @@ export default function Home() {
             </div>
           </div>
           <div className="border border-white/5 rounded-xl overflow-hidden hover:border-primary/30 transition-all group shadow-2xl">
-            <div className="h-48 overflow-hidden">
+            <div className="h-48 overflow-hidden relative">
+              <span className="absolute top-4 left-4 bg-cyan-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest shadow-lg z-10">
+                Technology
+              </span>
               <Image
                 alt="Technology News"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -262,9 +264,6 @@ export default function Home() {
             </div>
             <div className="p-6">
               <div className="flex justify-between items-center mb-4">
-                <span className="text-[10px] font-bold text-cyan-500 uppercase tracking-widest">
-                  Technology
-                </span>
                 <span className="text-[10px] text-gray-700 uppercase tracking-widest">
                   Sep 28, 2023
                 </span>
@@ -279,7 +278,10 @@ export default function Home() {
             </div>
           </div>
           <div className="border border-white/5 rounded-xl overflow-hidden hover:border-primary/30 transition-all group shadow-2xl">
-            <div className="h-48 overflow-hidden">
+            <div className="h-48 overflow-hidden relative">
+              <span className="absolute top-4 left-4 bg-cyan-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest shadow-lg z-10">
+                Expeditions
+              </span>
               <Image
                 alt="Expedition News"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -291,9 +293,6 @@ export default function Home() {
             </div>
             <div className="p-6">
               <div className="flex justify-between items-center mb-4">
-                <span className="text-[10px] font-bold text-cyan-500 uppercase tracking-widest">
-                  Expeditions
-                </span>
                 <span className="text-[10px] text-gray-700 uppercase tracking-widest">
                   Aug 05, 2023
                 </span>

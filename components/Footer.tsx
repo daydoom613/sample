@@ -1,23 +1,42 @@
+import { Instagram, Linkedin, Twitter, Youtube } from "lucide-react";
+
 export default function Footer() {
   return (
-    <footer className="bg-background-dark border-t border-white/5 py-16">
+    <footer className="bg-gray-300 border-t border-red-600 py-16 mt-24">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="col-span-1 md:col-span-2 space-y-6">
           <div className="flex items-center gap-3">
             <h2 className="text-xl font-bold tracking-tight uppercase">
-              Nature Guru <span className="text-red-600">Creations</span>
+              <span className="text-green-600">N</span>
+              <span className="text-red-600">ature Guru Creations</span>
             </h2>
           </div>
-          <p className="text-slate-500 max-w-sm">
-            Redefining cinematic wildlife filmmaking through the seamless blend
-            of on-location expertise and cutting-edge visual effects.
+          <p className="text-slate-800 max-w-sm text-justify">
+            Nature Guru Creations is a filmmaking studio focused on creating
+            original films and series for global audiences, while also
+            delivering world-class VFX & CG execution for international
+            productions through a robust, engineering-driven pipeline.
           </p>
+          <div className="flex gap-5">
+            <a href="#" className="hover:scale-105">
+              <Instagram />
+            </a>
+            <a href="#" className="hover:scale-105">
+              <Twitter />
+            </a>
+            <a href="#" className="hover:scale-105">
+              <Youtube />
+            </a>
+            <a href="#" className="hover:scale-105">
+              <Linkedin />
+            </a>
+          </div>
         </div>
         <div>
           <h4 className="font-bold mb-6 uppercase tracking-widest text-xs text-red-600">
             Company
           </h4>
-          <ul className="space-y-4 text-sm text-gray-700">
+          <ul className="space-y-4 text-sm text-gray-800">
             <li>
               <a className="hover:text-gold transition-colors" href="#">
                 About Us

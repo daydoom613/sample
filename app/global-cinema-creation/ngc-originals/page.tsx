@@ -82,7 +82,7 @@ export default function page() {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="group relative flex flex-col gap-6 rounded-xl border border-slate-200 dark:border-white/5 bg-red-500 p-8 transition-all hover:shadow-2xl">
+          <div className="group relative flex flex-col gap-6 rounded-xl border border-slate-200 dark:border-white/5 bg-red-800 p-8 transition-all hover:shadow-2xl">
             <div className="flex size-14 items-center justify-center rounded-lg bg-white text-red-600 transition-transform group-hover:scale-110">
               <Lightbulb />
             </div>
@@ -97,7 +97,7 @@ export default function page() {
               </p>
             </div>
           </div>
-          <div className="group relative flex flex-col gap-6 rounded-xl border border-slate-200 dark:border-white/5 bg-red-500 p-8 transition-all hover:shadow-2xl">
+          <div className="group relative flex flex-col gap-6 rounded-xl border border-slate-200 dark:border-white/5 bg-red-800 p-8 transition-all hover:shadow-2xl">
             <div className="flex size-14 items-center justify-center rounded-lg bg-white text-red-600 transition-transform group-hover:scale-110">
               <SquarePen />
             </div>
@@ -112,7 +112,7 @@ export default function page() {
               </p>
             </div>
           </div>
-          <div className="group relative flex flex-col gap-6 rounded-xl border border-slate-200 bg-red-500 p-8 transition-all hover:shadow-2xl">
+          <div className="group relative flex flex-col gap-6 rounded-xl border border-slate-200 bg-red-800 p-8 transition-all hover:shadow-2xl">
             <div className="flex size-14 items-center justify-center rounded-lg bg-white text-red-600 transition-transform group-hover:scale-110">
               <Videotape />
             </div>
@@ -127,7 +127,7 @@ export default function page() {
               </p>
             </div>
           </div>
-          <div className="group relative flex flex-col gap-6 rounded-xl border border-slate-200 bg-red-500 p-8 transition-all hover:shadow-2xl">
+          <div className="group relative flex flex-col gap-6 rounded-xl border border-slate-200 bg-red-800 p-8 transition-all hover:shadow-2xl">
             <div className="flex size-14 items-center justify-center rounded-lg bg-white text-red-600 transition-transform group-hover:scale-110">
               <Globe />
             </div>
@@ -142,7 +142,7 @@ export default function page() {
               </p>
             </div>
           </div>
-          <div className="group relative flex flex-col gap-6 rounded-xl border border-slate-200 bg-red-500 p-8 transition-all hover:shadow-2xl md:col-span-2 lg:col-span-1">
+          <div className="group relative flex flex-col gap-6 rounded-xl border border-slate-200 bg-red-800 p-8 transition-all hover:shadow-2xl md:col-span-2 lg:col-span-1">
             <div className="flex size-14 items-center justify-center rounded-lg bg-white text-red-600 transition-transform group-hover:scale-110">
               <Handshake />
             </div>
