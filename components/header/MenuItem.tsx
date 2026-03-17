@@ -26,9 +26,9 @@ export default function MenuItem({ item, level = 0 }: Props) {
               absolute ${
                 level === 0
                   ? "top-full left-0 bg-white"
-                  : `top-[110%] left-1 bg-gray-50`
+                  : "top-0 left-full bg-gray-50 border-l border-black/10"
               }
-              px-5 py-3 shadow-lg rounded-md
+              min-w-64 px-5 py-3 shadow-lg rounded-md
               opacity-0 invisible
               group-hover:opacity-100 group-hover:visible
               transition-all duration-200

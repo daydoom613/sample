@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
               original films and series for global audiences, while also
               delivering world-class VFX & CG execution for international
               productions through a robust, engineering-driven pipeline.
+            </p>
+            <p className="text-red-600 font-bold tracking-wide">
+              Technology • Emotion • Story — The Future of Cinema.
             </p>
             <div className="grid grid-cols-2 gap-8 pt-4">
               <div className="border-l-4 border-cyan-600 pl-6">
@@ -49,6 +53,80 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="py-24 max-w-7xl mx-auto px-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div>
+            <h2 className="text-3xl font-bold uppercase tracking-tight mb-2">
+              What We <span className="text-red-600">Do</span>
+            </h2>
+            <p className="text-slate-500 max-w-2xl">
+              A complete, end-to-end studio ecosystem where story, technology,
+              and execution move together.
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <Link
+            href="/global-cinema-creation/ngc-originals"
+            className="group rounded-2xl border border-black/5 bg-white p-8 shadow-[0_20px_60px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-transform"
+          >
+            <div className="text-xs font-extrabold uppercase tracking-[0.25em] text-red-600">
+              Global Cinema Creation
+            </div>
+            <div className="mt-3 text-2xl font-extrabold tracking-tight">
+              NGC Originals
+            </div>
+            <p className="mt-3 text-gray-700 leading-relaxed">
+              In-house productions pushing the boundaries of natural history
+              filmmaking.
+            </p>
+            <div className="mt-6 font-extrabold text-red-600 group-hover:underline">
+              Explore
+            </div>
+          </Link>
+
+          <Link
+            href="/global-cinema-creation/the-science-of-storytelling"
+            className="group rounded-2xl border border-black/5 bg-white p-8 shadow-[0_20px_60px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-transform"
+          >
+            <div className="text-xs font-extrabold uppercase tracking-[0.25em] text-red-600">
+              NGC Methodology
+            </div>
+            <div className="mt-3 text-2xl font-extrabold tracking-tight">
+              The Science of Storytelling
+            </div>
+            <p className="mt-3 text-gray-700 leading-relaxed">
+              A disciplined, technically correct workflow that turns creative
+              ideas into high-quality visuals with clarity and efficiency.
+            </p>
+            <div className="mt-6 font-extrabold text-red-600 group-hover:underline">
+              Learn more
+            </div>
+          </Link>
+
+          <Link
+            href="/services"
+            className="group rounded-2xl border border-black/5 bg-white p-8 shadow-[0_20px_60px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-transform"
+          >
+            <div className="text-xs font-extrabold uppercase tracking-[0.25em] text-red-600">
+              International VFX
+            </div>
+            <div className="mt-3 text-2xl font-extrabold tracking-tight">
+              VFX / CG Services
+            </div>
+            <p className="mt-3 text-gray-700 leading-relaxed">
+              High-end VFX and CG execution for global films and series,
+              delivered through NGC’s integrated production pipeline.
+            </p>
+            <div className="mt-6 font-extrabold text-red-600 group-hover:underline">
+              View capabilities
+            </div>
+          </Link>
+        </div>
+      </section>
+
       <section className="py-24 max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-end mb-12">
           <div>
@@ -71,8 +149,8 @@ export default function Home() {
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               data-alt="Movie poster for The Last Jungle featuring a lion in high contrast"
               src="/poster_1.png"
-              width={50}
-              height={50}
+              fill
+              sizes="(min-width: 1024px) 33vw, (min-width: 768px) 33vw, 100vw"
             />
             <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-80"></div>
             <div className="absolute bottom-0 left-0 p-8 text-white">
@@ -96,8 +174,8 @@ export default function Home() {
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               data-alt="Movie poster for Apex Predator showing a Great White Shark underwater"
               src="/poster_2.png"
-              width={50}
-              height={50}
+              fill
+              sizes="(min-width: 1024px) 33vw, (min-width: 768px) 33vw, 100vw"
             />
             <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-80"></div>
             <div className="absolute bottom-0 left-0 p-8 text-white">
@@ -121,8 +199,8 @@ export default function Home() {
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               data-alt="Movie poster for Wild Echoes featuring an owl in flight at night"
               src="/poster_3.png"
-              width={50}
-              height={50}
+              fill
+              sizes="(min-width: 1024px) 33vw, (min-width: 768px) 33vw, 100vw"
             />
             <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-80"></div>
             <div className="absolute bottom-0 left-0 p-8 text-white">
@@ -144,14 +222,15 @@ export default function Home() {
       </section>
       <section className="py-24 max-w-7xl mx-auto px-6">
         <div className="rounded-2xl overflow-hidden flex flex-col md:flex-row shadow-2xl">
-          <div className="md:w-1/2 relative h-80 md:h-auto">
+          <div className="md:w-1/2 bg-black/5">
             <Image
               alt="VFX Rendering"
-              className="w-full h-full object-cover"
+              className="w-full h-auto object-contain"
               data-alt="Abstract 3D particle landscape representing VFX technology"
               src="/vfxPoster.jpg"
-              width={50}
-              height={50}
+              sizes="(min-width: 768px) 50vw, 100vw"
+              width={1600}
+              height={900}
             />
           </div>
           <div className="md:w-1/2 p-12 flex flex-col justify-center space-y-6">
@@ -187,8 +266,8 @@ export default function Home() {
               className="w-full h-full object-cover blur-md opacity-40 scale-105"
               data-alt="Blurred mountain landscape for a locked video player"
               src="/reel.png"
-              width={50}
-              height={50}
+              fill
+              sizes="(min-width: 768px) 800px, 100vw"
             />
             <div className="absolute inset-0 flex flex-col items-center justify-center p-6">
               <div className="bg-gray-900/30 backdrop-blur-xl p-10 rounded-2xl border border-white/10 max-w-sm">
@@ -228,8 +307,8 @@ export default function Home() {
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 data-alt="Cinematic camera setup at a film awards ceremony"
                 src="/press1.png"
-                width={50}
-                height={60}
+                fill
+                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
               />
             </div>
             <div className="p-6">
@@ -258,8 +337,8 @@ export default function Home() {
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 data-alt="Technician working on a high-tech visual effects workstation"
                 src="/press2.png"
-                width={50}
-                height={50}
+                fill
+                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
               />
             </div>
             <div className="p-6">
@@ -287,8 +366,8 @@ export default function Home() {
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 data-alt="Wide shot of a mountain range with dramatic clouds"
                 src="/press3.png"
-                height={50}
-                width={50}
+                fill
+                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
               />
             </div>
             <div className="p-6">

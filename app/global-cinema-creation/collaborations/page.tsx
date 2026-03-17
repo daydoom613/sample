@@ -3,10 +3,10 @@ import { ArrowLeft, ArrowRight, Box, Play, Sparkles } from "lucide-react";
 export default function page() {
   return (
     <>
-      <section className="relative min-h-[60vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden bg-background-dark">
+      <section className="relative min-h-[60vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden bg-white">
         <div className="relative z-10 max-w-4xl space-y-8">
           <div className="space-y-4">
-            <span className="inline-block px-4 py-1.5 rounded-full border text-xs font-bold tracking-[0.2em] uppercase">
+            <span className="inline-block px-4 py-1.5 rounded-full border border-black/10 text-xs font-bold tracking-[0.2em] uppercase text-gray-700">
               The Creative Portal
             </span>
             <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-[1.1] text-red-600">
@@ -14,16 +14,16 @@ export default function page() {
               Storytelling
             </h1>
           </div>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
             NGC is built on long-term artistic partnerships. We don&apos;t just
             take submissions; we build worlds together. Join our community of
             visionaries.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="min-w-50 h-14 bg-white text-red-600 rounded-lg font-bold text-lg hover:scale-105 transition-transform shadow-lg border">
+            <button className="min-w-50 h-14 bg-red-600 text-white rounded-lg font-bold text-lg hover:scale-105 transition-transform shadow-lg border border-red-600">
               Start a Dialogue
             </button>
-            <button className="min-w-50 h-14 border border-white/20 bg-white/5 backdrop-blur text-red-600 rounded-lg font-bold text-lg hover:bg-white/10 transition-colors">
+            <button className="min-w-50 h-14 border border-black/10 bg-white text-gray-900 rounded-lg font-bold text-lg hover:bg-black/5 transition-colors">
               View Showreel
             </button>
           </div>
