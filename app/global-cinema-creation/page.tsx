@@ -1,187 +1,195 @@
+import Link from "next/link";
 import { SquareArrowOutUpRight } from "lucide-react";
+import type { Metadata } from "next";
+import PageIntro from "@/components/page/PageIntro";
+import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
+import PageSection from "@/components/page/PageSection";
+import { contentSectionTitleClass } from "@/components/page/contentStyles";
 
-export default function page() {
+export const metadata: Metadata = {
+  title: "Global Cinema Creation",
+  description:
+    "The heart of NGC filmmaking — originals, co-productions, and partner IPs.",
+};
+
+export default function GlobalCinemaCreationPage() {
   return (
     <>
-      <section className="relative h-[80vh] w-full flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 hero-overlay z-10 backdrop-blur-sm"></div>
-          <div
-            className="w-full h-full bg-[url('/hero-global.avif')] bg-cover bg-center"
-            data-alt="Cinematic background showing a film set with professional lighting"
-          ></div>
-        </div>
-        <div className="relative z-20 container mx-auto px-6 text-center max-w-4xl">
-          <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-white/20 text-white border border-white/30 rounded-full">
-            The Creative Core
-          </span>
-          <h1 className="text-5xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] tracking-tight">
-            Global Cinema <br />
-            Creation
-          </h1>
-          <p className="text-lg lg:text-xl text-white mb-10 leading-relaxed font-semibold">
-            The heart of NGC filmmaking. We craft boundary-pushing stories and
-            visionary experiences that resonate with diverse audiences across
-            every continent.
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <button className="bg-white/90 text-red-600 px-8 py-4 rounded-lg font-bold hover:bg-primary/80 transition-all flex items-center gap-2">
-              View Showreel
-            </button>
-            <button className="bg-white/10 text-white backdrop-blur-md border border-white/20 px-8 py-4 rounded-lg font-bold hover:bg-white/20 transition-all">
-              Our Vision
-            </button>
-          </div>
-        </div>
-      </section>
+      <PageIntro
+        kicker="Global cinema creation"
+        title={ngcBrandLeadingText("The heart of NGC filmmaking")}
+        tagline="Stories that travel — continent to continent."
+        image={{
+          src: "/hero-global.avif",
+          alt: "Global cinema creation at Nature Guru Creations",
+          priority: true,
+        }}
+      >
+        <p>
+          The creative core of NGC. We craft boundary-pushing stories and
+          visionary experiences that resonate with diverse audiences across every
+          continent.
+        </p>
+      </PageIntro>
 
-      <section className="py-24 px-6 lg:px-20 max-w-360 mx-auto">
+      <PageSection className="border-t border-black/5 pt-0">
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-red-600 mb-4">
-            Production Pillars
+          <h2 className={`${contentSectionTitleClass} mb-4`}>
+            Production pillars
           </h2>
-          <div className="w-20 h-1 bg-red-500 rounded-full"></div>
+          <div className="w-20 h-1 bg-[var(--ngc-accent)] rounded-full" />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="group relative aspect-3/4 overflow-hidden rounded-xl bg-surface-dark border border-white/5">
+          <div className="group relative aspect-3/4 overflow-hidden rounded-xl bg-slate-800 border border-black/5">
             <div
               className="absolute inset-0 transition-transform duration-700 group-hover:scale-110 bg-[url('/ngcOrg.avif')] bg-cover bg-center"
               data-alt="Dramatic cinematic lighting on a futuristic set"
-            ></div>
-            <div className="absolute inset-0 cinematic-gradient"></div>
+            />
+            <div className="absolute inset-0 cinematic-gradient" />
             <div className="absolute inset-0 p-8 flex flex-col justify-end">
-              <span className="text-white font-bold text-xs uppercase tracking-widest mb-2">
-                Internal Dev
+              <span className="text-white type-body font-bold uppercase tracking-widest mb-2">
+                Internal dev
               </span>
-              <h3 className="text-2xl font-bold text-white mb-3">
+              <h3 className="type-subheading font-bold mb-3">
                 NGC Originals
               </h3>
-              <p className="text-slate-300 text-sm leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p className="text-slate-300 type-body leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Stories created in-house that showcase the unique creativity and
                 vision of NGC.
               </p>
-              <button className="flex items-center gap-2 text-white font-bold text-sm hover:text-primary transition-colors">
-                Explore Slate {"->"}
-              </button>
+              <Link
+                href="/global-cinema-creation/ngc-originals"
+                className="flex items-center gap-2 text-white font-bold type-body hover:text-[var(--ngc-accent)] transition-colors"
+              >
+                Explore slate
+                <span aria-hidden>→</span>
+              </Link>
             </div>
           </div>
-          <div className="group relative aspect-3/4 overflow-hidden rounded-xl bg-surface-dark border border-white/5">
+          <div className="group relative aspect-3/4 overflow-hidden rounded-xl bg-slate-800 border border-black/5">
             <div
               className="absolute inset-0 transition-transform duration-700 group-hover:scale-110 bg-[url('/ngcOrg.avif')] bg-cover bg-center"
               data-alt="Film crew working on an international location"
-            ></div>
-            <div className="absolute inset-0 cinematic-gradient"></div>
+            />
+            <div className="absolute inset-0 cinematic-gradient" />
             <div className="absolute inset-0 p-8 flex flex-col justify-end">
-              <span className="text-white font-bold text-xs uppercase tracking-widest mb-2">
-                Global Partnerships
+              <span className="text-white type-body font-bold uppercase tracking-widest mb-2">
+                Global partnerships
               </span>
-              <h3 className="text-2xl font-bold text-white mb-3">
-                Co-Productions
+              <h3 className="type-subheading font-bold mb-3">
+                Co-productions
               </h3>
-              <p className="text-slate-300 text-sm leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p className="text-slate-300 type-body leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Partnering with international studios to bring great stories to
                 life across borders.
               </p>
-              <button className="flex items-center gap-2 text-white font-bold text-sm hover:text-primary transition-colors">
-                Joint Ventures {"->"}
-              </button>
+              <Link
+                href="/investors"
+                className="flex items-center gap-2 text-white font-bold type-body hover:text-[var(--ngc-accent)] transition-colors"
+              >
+                Joint ventures
+                <span aria-hidden>→</span>
+              </Link>
             </div>
           </div>
-          <div className="group relative aspect-3/4 overflow-hidden rounded-xl bg-surface-dark border border-white/5">
+          <div className="group relative aspect-3/4 overflow-hidden rounded-xl bg-slate-800 border border-black/5">
             <div
               className="absolute inset-0 transition-transform duration-700 group-hover:scale-110 bg-[url('/imgSpl.avif')] bg-cover bg-center"
-              data-alt="classNameic camera lenses and cinematic equipment"
-            ></div>
-            <div className="absolute inset-0 cinematic-gradient"></div>
+              data-alt="Cinematic camera lenses and equipment"
+            />
+            <div className="absolute inset-0 cinematic-gradient" />
             <div className="absolute inset-0 p-8 flex flex-col justify-end">
-              <span className="text-white font-bold text-xs uppercase tracking-widest mb-2">
-                IP Management
+              <span className="text-white type-body font-bold uppercase tracking-widest mb-2">
+                IP management
               </span>
-              <h3 className="text-2xl font-bold text-white mb-3">
+              <h3 className="type-subheading font-bold mb-3">
                 Partner IPs
               </h3>
-              <p className="text-slate-300 text-sm leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <p className="text-slate-300 type-body leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Bringing fresh ideas and creativity to well-known global
                 franchises.
               </p>
-              <button className="flex items-center gap-2 text-white font-bold text-sm hover:text-primary transition-colors">
-                Portfolio {"->"}
-              </button>
+              <Link
+                href="/global-cinema-creation/ip-partners"
+                className="flex items-center gap-2 text-white font-bold type-body hover:text-[var(--ngc-accent)] transition-colors"
+              >
+                Portfolio
+                <span aria-hidden>→</span>
+              </Link>
             </div>
           </div>
         </div>
-      </section>
+      </PageSection>
 
-      <section className="py-24 bg-white/5 dark:bg-surface-dark/50 border-y border-white/5">
-        <div className="max-w-360 mx-auto px-6 lg:px-20 text-center">
-          <h2 className="text-4xl font-bold text-red-600 mb-4">
-            Creative Collaboration
+      <PageSection className="bg-black/[0.02] border-y border-black/5">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <h2 className={`${contentSectionTitleClass} mb-4`}>
+            Creative collaboration
           </h2>
-          <p className="text-slate-900 max-w-2xl mx-auto mb-16">
+          <p className="type-body text-[var(--ngc-text-secondary)]">
             We are constantly seeking visionary talent to push the boundaries of
             modern cinema. Join our ecosystem of elite storytellers.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
-            <div className="rounded-2xl group bg-[url('https://www.dorrancepublishing.com/wp-content/uploads/2019/01/Writing-Type-2.jpg')] bg-no-repeat bg-cover transition-all duration-300 overflow-hidden">
-              <div className="backdrop-blur-[2px] h-full p-10 flex flex-col justify-between">
-                <h4 className="text-xl font-bold text-white mb-4">Writers</h4>
-                <div>
-                  <p className="text-white text-sm leading-relaxed mb-8">
-                    Scripting the future. We collaborate with bold voices
-                    capable of weaving complex narratives for global audiences.
-                  </p>
-                  <a
-                    className="text-xs font-bold uppercase tracking-widest text-white flex items-center gap-2 group-hover:gap-3 transition-all"
-                    href="#"
-                  >
-                    Submit Script
-                    <SquareArrowOutUpRight />
-                  </a>
-                </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-left">
+          <div className="rounded-2xl overflow-hidden border border-black/5 shadow-[0_20px_60px_rgba(0,0,0,0.06)] min-h-80 bg-slate-800 bg-[url('/poster_1.png')] bg-cover bg-center">
+            <div className="backdrop-blur-[2px] h-full p-10 flex flex-col justify-between bg-black/40 min-h-80">
+              <h4 className="type-subheading mb-4">Writers</h4>
+              <div>
+                <p className="text-white type-body leading-relaxed mb-8">
+                  Scripting the future. We collaborate with bold voices capable
+                  of weaving complex narratives for global audiences.
+                </p>
+                <Link
+                  className="type-body font-bold uppercase tracking-widest text-white inline-flex items-center gap-2 hover:gap-3 transition-all"
+                  href="/global-cinema-creation/collaborations#writers"
+                >
+                  Submit script
+                  <SquareArrowOutUpRight className="size-4" />
+                </Link>
               </div>
             </div>
-            <div className="rounded-2xl group bg-[url('https://tse1.mm.bing.net/th/id/OIP.pzMud9IrVhcKmX453G4FRQHaDt?rs=1&pid=ImgDetMain&o=7&rm=3')] bg-no-repeat bg-cover transition-all duration-300 overflow-hidden">
-              <div className="backdrop-blur-[2px] p-10 h-full flex flex-col justify-between">
-                <h4 className="text-xl font-bold text-white mb-4">Directors</h4>
-                <div>
-                  <p className="text-gray-200 text-sm leading-relaxed mb-8">
-                    Visualizing the unseen. We provide the resources and
-                    creative freedom for directors to manifest their unique
-                    aesthetic.
-                  </p>
-                  <a
-                    className="text-xs font-bold uppercase tracking-widest text-white flex items-center gap-2 group-hover:gap-3 transition-all"
-                    href="#"
-                  >
-                    Showcase Reel
-                    <SquareArrowOutUpRight />
-                  </a>
-                </div>
+          </div>
+          <div className="rounded-2xl overflow-hidden border border-black/5 shadow-[0_20px_60px_rgba(0,0,0,0.06)] min-h-80 bg-slate-800 bg-[url('/c1.png')] bg-cover bg-center">
+            <div className="backdrop-blur-[2px] h-full p-10 flex flex-col justify-between bg-black/40 min-h-80">
+              <h4 className="type-subheading mb-4">Directors</h4>
+              <div>
+                <p className="text-gray-200 type-body leading-relaxed mb-8">
+                  Visualizing the unseen. We provide the resources and creative
+                  freedom for directors to manifest their unique aesthetic.
+                </p>
+                <Link
+                  className="type-body font-bold uppercase tracking-widest text-white inline-flex items-center gap-2 hover:gap-3 transition-all"
+                  href="/global-cinema-creation/collaborations#directors"
+                >
+                  Showcase reel
+                  <SquareArrowOutUpRight className="size-4" />
+                </Link>
               </div>
             </div>
-            <div className="rounded-2xl group bg-[url('https://tse4.mm.bing.net/th/id/OIP.4r389B9YjPm05373kflaEQHaFI?rs=1&pid=ImgDetMain&o=7&rm=3')] bg-no-repeat bg-cover  overflow-hidden transition-all duration-300">
-              <div className="backdrop-blur-[2px] p-10 flex flex-col justify-between h-96">
-                <h4 className="text-xl font-bold text-white mb-4">
-                  Music Creators
-                </h4>
-                <div>
-                  <p className="text-gray-200 text-sm leading-relaxed mb-8">
-                    Composing the soul of cinema. Our sonic landscapes are as
-                    vital as our visual ones. Join our scoring studio.
-                  </p>
-                  <a
-                    className="text-xs font-bold uppercase tracking-widest text-white flex items-center gap-2 group-hover:gap-3 transition-all"
-                    href="#"
-                  >
-                    Join Scoring Studio
-                    <SquareArrowOutUpRight />
-                  </a>
-                </div>
+          </div>
+          <div className="rounded-2xl overflow-hidden border border-black/5 shadow-[0_20px_60px_rgba(0,0,0,0.06)] min-h-80 bg-slate-800 bg-[url('/c2.png')] bg-cover bg-center">
+            <div className="backdrop-blur-[2px] p-10 flex flex-col justify-between h-full min-h-80 bg-black/40">
+              <h4 className="type-subheading mb-4">
+                Music creators
+              </h4>
+              <div>
+                <p className="text-gray-200 type-body leading-relaxed mb-8">
+                  Composing the soul of cinema. Our sonic landscapes are as vital
+                  as our visual ones.
+                </p>
+                <Link
+                  className="type-body font-bold uppercase tracking-widest text-white inline-flex items-center gap-2 hover:gap-3 transition-all"
+                  href="/global-cinema-creation/collaborations#music-sound"
+                >
+                  Join scoring studio
+                  <SquareArrowOutUpRight className="size-4" />
+                </Link>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </PageSection>
     </>
   );
 }

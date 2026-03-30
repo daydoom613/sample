@@ -1,0 +1,49 @@
+import Link from "next/link";
+import type { Metadata } from "next";
+import PageIntro from "@/components/page/PageIntro";
+import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
+import PageSection from "@/components/page/PageSection";
+
+export const metadata: Metadata = {
+  title: "IPs, Distribution & OTT",
+  description:
+    "Distribution and OTT partnerships for NGC originals and partner IPs.",
+};
+
+export default function OttPage() {
+  return (
+    <div className="w-full">
+      <PageIntro
+        kicker="Distribution"
+        title={ngcBrandLeadingText("IPs, distribution & OTT")}
+        tagline="Originals • Partner IPs • Global reach."
+        image={{
+          src: "/poster_2.png",
+          alt: "NGC originals and distribution partnerships",
+          priority: true,
+        }}
+      >
+        <p>
+          We work with platforms and distributors on originals and creative
+          execution titles. For acquisition or partnership discussions, get in
+          touch with our team.
+        </p>
+      </PageIntro>
+
+      <PageSection className="pt-0 pb-28 flex flex-wrap gap-4">
+        <Link
+          href="/investors"
+          className="inline-flex rounded-lg border border-gray-300 px-6 py-3 type-body font-semibold text-[var(--ngc-text-primary)] hover:border-[var(--ngc-accent)] transition-colors"
+        >
+          Investors &amp; partners
+        </Link>
+        <Link
+          href="/contact"
+          className="inline-flex rounded-lg bg-[var(--ngc-accent)]/15 border border-[var(--ngc-accent)]/40 px-6 py-3 type-body font-semibold text-[var(--ngc-text-primary)] hover:bg-[var(--ngc-accent)]/25 transition-colors"
+        >
+          Contact distribution
+        </Link>
+      </PageSection>
+    </div>
+  );
+}

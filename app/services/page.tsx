@@ -1,4 +1,18 @@
 import { CheckCircle2 } from "lucide-react";
+import type { Metadata } from "next";
+import PageIntro from "@/components/page/PageIntro";
+import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
+import PageSection from "@/components/page/PageSection";
+import {
+  contentCardClass,
+  contentSectionTitleClass,
+} from "@/components/page/contentStyles";
+
+export const metadata: Metadata = {
+  title: "International VFX / CG Services",
+  description:
+    "High-end VFX and CG for global films and series through NGC’s integrated pipeline.",
+};
 
 const capabilities = [
   {
@@ -55,109 +69,107 @@ const collaboration = [
   "Integrated asset and version management",
 ];
 
-export default function Page() {
+export default function ServicesPage() {
   return (
     <div className="w-full">
-      <section className="px-6 md:px-16 lg:px-24 pt-16 pb-14">
-        <div className="mx-auto max-w-6xl">
-          <div className="inline-flex items-center gap-2 rounded-full border border-red-600/20 bg-red-600/5 px-4 py-1.5 text-xs font-extrabold uppercase tracking-[0.25em] text-red-600">
-            International VFX / CG Services
-          </div>
-          <h1 className="mt-6 text-4xl md:text-6xl font-black leading-[1.08] tracking-tight">
-            High-end VFX and CG execution for global films and series
-          </h1>
-          <p className="mt-4 max-w-4xl text-gray-700 text-lg md:text-xl leading-relaxed">
-            Delivered through NGC’s integrated production pipeline.
-          </p>
-          <p className="mt-8 max-w-5xl text-gray-700 leading-relaxed">
-            NGC provides high-end visual effects and CG production services for
-            international film studios, OTT platforms, advertising agencies, and
-            creative production companies. Working through a robust and tightly
-            integrated pipeline, NGC collaborates with global studios, producers,
-            and production teams to execute complex visual sequences, digital
-            environments, and CG-driven storytelling at cinematic scale.
-          </p>
-        </div>
-      </section>
+      <PageIntro
+        kicker="International VFX / CG services"
+        title={ngcBrandLeadingText(
+          "High-end VFX and CG for global films and series",
+        )}
+        tagline="Delivered through NGC’s integrated production pipeline."
+        image={{
+          src: "/vfxPoster.jpg",
+          alt: "VFX and CG work at Nature Guru Creations",
+          priority: true,
+        }}
+      >
+        <p>
+          NGC provides high-end visual effects and CG production services for
+          international film studios, OTT platforms, advertising agencies, and
+          creative production companies. Working through a robust and tightly
+          integrated pipeline, NGC collaborates with global studios, producers,
+          and production teams to execute complex visual sequences, digital
+          environments, and CG-driven storytelling at cinematic scale.
+        </p>
+      </PageIntro>
 
-      <section className="px-6 md:px-16 lg:px-24 pb-20">
-        <div className="mx-auto max-w-6xl">
-          <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-red-600">
-            Our International Capabilities
-          </h2>
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
-            {capabilities.map((c) => (
-              <div
-                key={c.title}
-                className="rounded-2xl border border-black/5 bg-white p-8 shadow-[0_20px_60px_rgba(0,0,0,0.06)]"
-              >
-                <div className="text-lg font-extrabold text-gray-900">
-                  {c.title}
-                </div>
-                <div className="mt-5 space-y-3">
-                  {c.items.map((i) => (
-                    <div key={i} className="flex items-start gap-3">
-                      <CheckCircle2 className="mt-0.5 size-5 text-red-600 shrink-0" />
-                      <div className="text-gray-700 font-semibold">{i}</div>
+      <PageSection className="border-t border-black/5 pt-0">
+        <h2 className={`${contentSectionTitleClass} mb-10`}>
+          Our international capabilities
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {capabilities.map((c) => (
+            <div key={c.title} className={contentCardClass}>
+              <h3 className="type-subheading">{c.title}</h3>
+              <div className="mt-5 space-y-3">
+                {c.items.map((i) => (
+                  <div key={i} className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-0.5 size-5 text-[var(--ngc-accent)] shrink-0" />
+                    <div className="type-body font-medium text-[var(--ngc-text-primary)]">
+                      {i}
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
-      </section>
+      </PageSection>
 
-      <section className="px-6 md:px-16 lg:px-24 pb-20">
-        <div className="mx-auto max-w-6xl rounded-3xl border border-black/5 bg-white p-10">
-          <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-red-600">
-            Our Pipeline Advantage
+      <PageSection className="border-t border-black/5 bg-black/[0.02]">
+        <div className={contentCardClass}>
+          <h2 className={`${contentSectionTitleClass} mb-6`}>
+            Our pipeline advantage
           </h2>
-          <p className="mt-5 max-w-5xl text-gray-700 leading-relaxed">
+          <p className="type-body text-justify text-[var(--ngc-text-secondary)] max-w-5xl mb-8">
             NGC operates with a modern, integrated pipeline designed for global
             collaboration. Our pipeline ensures consistent quality, predictable
             timelines, and smooth integration with global post-production
             workflows.
           </p>
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {pipelineAdvantage.map((p) => (
               <div
                 key={p}
                 className="flex items-start gap-3 rounded-xl border border-black/5 bg-white/70 p-4"
               >
-                <CheckCircle2 className="mt-0.5 size-5 text-red-600 shrink-0" />
-                <div className="text-gray-800 font-semibold">{p}</div>
+                <CheckCircle2 className="mt-0.5 size-5 text-[var(--ngc-accent)] shrink-0" />
+                <div className="type-body font-medium text-[var(--ngc-text-primary)]">
+                  {p}
+                </div>
               </div>
             ))}
           </div>
         </div>
-      </section>
+      </PageSection>
 
-      <section className="px-6 md:px-16 lg:px-24 pb-24">
-        <div className="mx-auto max-w-6xl rounded-3xl border border-black/5 bg-white p-10 md:p-14 shadow-[0_20px_60px_rgba(0,0,0,0.06)]">
-          <h2 className="text-2xl md:text-3xl font-extrabold tracking-tight text-red-600">
-            Collaboration Approach
+      <PageSection>
+        <div className={contentCardClass}>
+          <h2 className={`${contentSectionTitleClass} mb-6`}>
+            Collaboration approach
           </h2>
-          <p className="mt-5 max-w-5xl text-gray-700 leading-relaxed">
+          <p className="type-body text-justify text-[var(--ngc-text-secondary)] max-w-5xl mb-8">
             NGC works closely with international production teams through
             supervisor-led workflows and secure production pipelines, ensuring
             transparency, reliability, and high-quality delivery across every
             stage of production.
           </p>
-          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {collaboration.map((c) => (
               <div
                 key={c}
                 className="flex items-start gap-3 rounded-xl border border-black/5 bg-white/70 p-4"
               >
-                <CheckCircle2 className="mt-0.5 size-5 text-red-500 shrink-0" />
-                <div className="font-semibold text-gray-800">{c}</div>
+                <CheckCircle2 className="mt-0.5 size-5 text-[var(--ngc-accent)] shrink-0" />
+                <div className="type-body font-medium text-[var(--ngc-text-primary)]">
+                  {c}
+                </div>
               </div>
             ))}
           </div>
         </div>
-      </section>
+      </PageSection>
     </div>
   );
 }
-

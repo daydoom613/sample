@@ -1,41 +1,41 @@
 import { ArrowLeft, ArrowRight, Box, Play, Sparkles } from "lucide-react";
+import type { Metadata } from "next";
+import PageIntro from "@/components/page/PageIntro";
+import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
+import { contentSectionTitleClass } from "@/components/page/contentStyles";
 
-export default function page() {
+export const metadata: Metadata = {
+  title: "Creative Collaboration",
+  description:
+    "Long-term artistic partnerships with writers, directors, and music creators.",
+};
+
+export default function CollaborationsPage() {
   return (
     <>
-      <section className="relative min-h-[60vh] flex flex-col items-center justify-center text-center px-6 overflow-hidden bg-white">
-        <div className="relative z-10 max-w-4xl space-y-8">
-          <div className="space-y-4">
-            <span className="inline-block px-4 py-1.5 rounded-full border border-black/10 text-xs font-bold tracking-[0.2em] uppercase text-gray-700">
-              The Creative Portal
-            </span>
-            <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-[1.1] text-red-600">
-              Shape the Future of <br />
-              Storytelling
-            </h1>
-          </div>
-          <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto leading-relaxed">
-            NGC is built on long-term artistic partnerships. We don&apos;t just
-            take submissions; we build worlds together. Join our community of
-            visionaries.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="min-w-50 h-14 bg-red-600 text-white rounded-lg font-bold text-lg hover:scale-105 transition-transform shadow-lg border border-red-600">
-              Start a Dialogue
-            </button>
-            <button className="min-w-50 h-14 border border-black/10 bg-white text-gray-900 rounded-lg font-bold text-lg hover:bg-black/5 transition-colors">
-              View Showreel
-            </button>
-          </div>
-        </div>
-      </section>
-      <section className="max-w-7xl mx-auto px-6 py-24">
+      <PageIntro
+        kicker="The creative portal"
+        title={ngcBrandLeadingText("Shape the future of storytelling")}
+        tagline="Partnership • Vision • Craft — built together."
+        image={{
+          src: "/c1.png",
+          alt: "Creative collaboration at Nature Guru Creations",
+          priority: true,
+        }}
+      >
+        <p>
+          NGC is built on long-term artistic partnerships. We don&apos;t just
+          take submissions; we build worlds together. Join our community of
+          visionaries.
+        </p>
+      </PageIntro>
+      <section className="max-w-7xl mx-auto px-6 py-24 border-t border-black/5">
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div className="space-y-2">
-            <h2 className="text-3xl text-red-600 font-bold tracking-tight">
+            <h2 className={contentSectionTitleClass}>
               The Creative Pillars
             </h2>
-            <p className="text-gray-700 max-w-md">
+            <p className="type-body text-[var(--ngc-text-secondary)] max-w-md">
               Discover your path within our ecosystem. We look for collaborators
               who think in trilogies and deep lore.
             </p>
@@ -46,7 +46,10 @@ export default function page() {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="group relative aspect-3/4 overflow-hidden rounded-xl bg-slate-800 transition-all duration-500 hover:-translate-y-2">
+          <div
+            id="writers"
+            className="group relative aspect-3/4 overflow-hidden rounded-xl bg-slate-800 transition-all duration-500 hover:-translate-y-2 scroll-mt-28"
+          >
             <div
               className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
               data-alt="Close up of an old typewriter with warm lighting"
@@ -62,7 +65,7 @@ export default function page() {
             <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary/50 transition-colors rounded-xl"></div>
             <div className="absolute bottom-0 p-8 w-full flex flex-col gap-4">
               <div className="space-y-1">
-                <h3 className="text-2xl font-bold text-white">
+                <h3 className="text-2xl font-bold">
                   Writers &amp; Story Creators
                 </h3>
                 <p className="text-slate-300 text-sm line-clamp-2">
@@ -75,7 +78,10 @@ export default function page() {
               </button>
             </div>
           </div>
-          <div className="group relative aspect-3/4 overflow-hidden rounded-xl bg-slate-800 transition-all duration-500 hover:-translate-y-2">
+          <div
+            id="directors"
+            className="group relative aspect-3/4 overflow-hidden rounded-xl bg-slate-800 transition-all duration-500 hover:-translate-y-2 scroll-mt-28"
+          >
             <div
               className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 bg-[url('/c1.png')]"
               data-alt="Cinematographer holding a professional cinema camera"
@@ -92,7 +98,7 @@ export default function page() {
             <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary/50 transition-colors rounded-xl"></div>
             <div className="absolute bottom-0 p-8 w-full flex flex-col gap-4">
               <div className="space-y-1">
-                <h3 className="text-2xl font-bold text-white">
+                <h3 className="text-2xl font-bold">
                   Directors &amp; Visual Creators
                 </h3>
                 <p className="text-slate-300 text-sm line-clamp-2">
@@ -105,7 +111,10 @@ export default function page() {
               </button>
             </div>
           </div>
-          <div className="group relative aspect-3/4 overflow-hidden rounded-xl bg-slate-800 transition-all duration-500 hover:-translate-y-2">
+          <div
+            id="music-sound"
+            className="group relative aspect-3/4 overflow-hidden rounded-xl bg-slate-800 transition-all duration-500 hover:-translate-y-2 scroll-mt-28"
+          >
             <div
               className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110 bg-[url('/c2.png')]"
               data-alt="Music producer at a mixing console in a studio"
@@ -121,7 +130,7 @@ export default function page() {
             <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary/50 transition-colors rounded-xl"></div>
             <div className="absolute bottom-0 p-8 w-full flex flex-col gap-4">
               <div className="space-y-1">
-                <h3 className="text-2xl font-bold text-white">
+                <h3 className="text-2xl font-bold">
                   Music &amp; Sound Creators
                 </h3>
                 <p className="text-slate-300 text-sm line-clamp-2">
@@ -142,8 +151,7 @@ export default function page() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h2 className="text-4xl font-bold tracking-tight">
-                  VFX Services as a <br />
-                  <span className="text-red-600">Collaborative Resource</span>
+                  VFX Services as a Collaborative Resource
                 </h2>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   Our in-house VFX studio isn&apos;t just a post-production
@@ -156,7 +164,7 @@ export default function page() {
                 <div className="flex gap-4">
                   <Box className="text-red-600 size-10" />
                   <div>
-                    <h4 className="font-bold text-red-600">
+                    <h4 className="font-bold">
                       Real-time Visualization
                     </h4>
                     <p className="text-sm text-gray-500">
@@ -168,7 +176,7 @@ export default function page() {
                 <div className="flex gap-4">
                   <Sparkles className="text-red-600 size-10" />
                   <div>
-                    <h4 className="font-bold text-red-600">
+                    <h4 className="font-bold">
                       Procedural World Building
                     </h4>
                     <p className="text-sm text-slate-500">
@@ -200,7 +208,7 @@ export default function page() {
       </section>
       <section className="max-w-7xl mx-auto px-6 py-24 text-center">
         <div className="glass-card max-w-4xl mx-auto rounded-3xl p-12 md:p-20 space-y-8 border-primary/20 bg-primary/[0.02]">
-          <h3 className="text-3xl font-bold tracking-tight italic">
+          <h3 className="ngc-heading-plain text-3xl font-bold tracking-tight italic text-[var(--ngc-text-primary)]">
             &quot;We value the artist&apos;s voice over the project&apos;s
             budget. Our goal is to foster a safe haven for wild ideas and
             long-term creative stability.&quot;

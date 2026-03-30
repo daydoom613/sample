@@ -1,0 +1,878 @@
+﻿For website design:
+
+
+My version: now we are building. ngc website. 
+I want to give all the data to pranav who is working on the website designing. 
+1. NGC website is like a hub of multpile communication to the world. It is not mere displaying our skills or projects. We want to use it as a channel to connect to the world. like talent acquasation for filmmaking and artists teams, vfx outsource teams etc all. similarly NGC website should allow to connect the investors to us when they want. like both way communications. one is website allows NGC expression .. at the same time outside worlds can connect or express the collaborations or connect to us. NGC activities and website role. NGC shows 1. Our on-going Complete CG projects and productions as NGC directors 
+2. our vfx show reel, 
+3. Open to international VFX studios collaborations ( ex uk companies can outsource CG work top us. depend on he margins we will takeup for NGC profits) 
+4. Outsource VFX/CG vendors: as we are executing number of projects.. we want to outsource work to outside studios. 
+5.Talent pool for NGC productions - encouragent to new age directors, content creators and music directors
+ 6. Talent pool for supervisors from abroad to join NGC 
+7. NGC media news, informations, events information, press releases 
+8. social media handles 
+9. careers for VFX artists 
+10. Training or internship programs for future work force 
+11. provision for investors to contact us for joint ventures, coproduction . want to connect all NRI to join us for production partners 
+12. distrubution sectors for global releases of our film projects like China, Japan , Korea, Dubai etc.. summarise all this information for website design. it should look simple . and connect all the NGC partners. when they navigate the website they should do it with ease and get the informationm they need and if want to connect it should happen seemlessly. kind of clear customisation and simplicity. 
+13. I missed one section where we are explaining our CG creation process like we are developing robust pipeline and intergrating highend vfx procedures, tracking , managing systems from ideation, writing, preprodcution, production, postproduction, Di seem less integrations . unreal, AI tools, maya, mari, Houdini, karma, katana, nuke, baselight is our core pipeline with very tight highend integration.
+14. we are engineers and scientists of film and production process. We engineer it scientifically and technically to minimize failures.
+15. we are open to outside directors/ creators / producers to execute their complete CG projects. they can collaborate at different stages. we will support from start to end solutions. Time and experience , professional environment with tight systems and integrations is our core specializations.    
+
+
+
+
+
+
+
+
+Design Option 1:
+Core idea for menus: 
+16. My idea is the first page to summarize all our core philosophy like indexes in a book. To give an understanding to the viewers about NGC functionality. Like showreel, projects posters, announcements links to other pages thematically.
+
+
+* Menu names will support the core philosophy with major sections. Main menus will help navigate people to respective interested areas. They should be less. Group related submenus etc. can do even in better ways.
+
+
+17. Second menu is dedicated to Content creation - IPs. 
+Explaining our own IP projects in detail and can give scope to connect interested partners for collaborations and to take up execution of outsider’s IPs and full film creations and execution. 
+It is creative , IP area and collaborations. 
+Submenus: 1. NGC IPs  2.Outsider’s IP projects execution services  3. Creative collaborations for talent - writers, music teams, directors and can connect or approach us here. 
+
+
+18. Third menu for NGC International VFX/CG services -  international studios collaborations for VFX projects.
+Submenus: 1. Our pipeline  2. International VFX/CG services  3. VFX/CG Outsource vendors  
+
+
+19 Fourth - Investors , Producers & Production Partners - Production partners like NRI producers, International producers, investors can connect here etc.
+
+
+20. Fourth - Media announcements & events, press releases
+
+
+21. Fifth - IPs Distribution and OTT connect
+
+
+22. Sixth - VFX Careers & Internship , contact
+
+
+23. Need a simplified channel to connect these many people in a systematic way and avoid spams or garbage.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Home page Design Option v02:
+
+
+
+
+
+
+
+
+Home + menus
+
+
+
+
+
+
+
+
+Image with caption ( tiger BG)
+
+
+
+
+
+
+
+
+
+
+About
+
+
+Nature Guru Creations is a filmmaking studio focused on creating original films and series for global audiences, while also delivering world-class VFX & CG execution for international productions through a robust, engineering-driven pipeline.
+
+
+
+
+NGC Originals:
+
+
+3 Posters will come.
+
+
+
+
+
+
+NGC VFX services
+
+
+1 poster will come
+
+
+
+
+Showreel : 
+
+
+it is private and need a way to give permission who want to watch it.
+
+
+
+
+Press Announcement:
+Images and text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Second main Menu:
+
+
+
+
+GLOBAL CINEMA CREATION
+ ├─ NGC Originals
+ ├─ Co-Productions
+ ├─ Partner IPs (Creative Execution)
+ └─ CREATIVE COLLABORATION
+         ├─ Writers & Story Creators
+         ├─ Directors & Visual Creators
+         └─ Music & Sound Creators
+
+
+Global Cinema Creation is the creative core of Nature Guru Creations.
+
+
+It reflects NGC’s commitment to developing original cinematic stories and transforming powerful ideas into cinema through writing, direction, and world-building — crafted at the highest cinematic quality for audiences across the world.
+
+
+
+
+
+
+
+
+NGC Originals: are original films and series created from NGC’s own ideas and cinematic vision, developed for global audiences.
+
+
+What Defines an NGC Original
+
+
+🧠 Idea Originates at NGC
+The story, world, or central concept is born within NGC.
+
+
+✍️ Creative Authorship
+NGC leads the writing, story development, and creative direction.
+
+
+🎬 Filmmaking Ownership
+NGC drives the cinematic vision and production approach.
+
+
+🌍 Global Scope
+Designed for worldwide theatrical and multi-language release.
+
+
+🤝 Open to Production Partnerships
+NGC Originals may be produced independently by NGC or in collaboration with external producers, banners, or investors — without losing their identity as NGC-originated works.
+
+
+
+
+CO-PRODUCTIONS:
+Co-Productions are cinematic projects developed and produced in collaboration with production partners, producers, or studios, where creative and production responsibilities are shared.
+
+
+
+
+PARTNER IPs:  are films or series where the original story and IP belong to an external creator, producer, or production banner, and NGC collaborates as a creative and execution partner to bring that vision to screen.
+
+
+In these projects, NGC applies its cinematic sensibility, creative collaboration, and full CG filmmaking capability to transform partner-owned ideas into high-quality global cinema.
+
+
+
+
+NGC’s Role in Partner IPs
+
+
+Depending on the collaboration, NGC may contribute to:
+
+
+✍️ Creative Development Support
+Story refinement, screenplay development, visual conception, and cinematic structuring.
+
+
+🎬 Creative Execution
+Translating the partner’s vision into a complete cinematic experience through direction support and CG-driven filmmaking.
+
+
+🧩 End-to-End CG Film Execution
+From pre-production to final delivery using NGC’s integrated pipeline.
+
+
+🤝 Collaborative Decision-Making
+Working closely with the IP owner to ensure the creative intent is respected and elevated.
+
+
+🧩 VFX SERVICES
+Collaborate with NGC for global VFX execution
+CREATIVE COLLABORATION
+
+
+✍️ Writers & Story Creators
+
+
+Writers & Story Creators is an open invitation to storytellers who believe in the power of cinema.
+
+
+NGC welcomes writers who are passionate about ideas, narratives, and worlds that can translate into powerful cinematic experiences. This space is for writers who wish to collaborate creatively, develop stories together, and explore the journey of transforming ideas into global cinema.
+
+
+We seek long-term creative collaboration — ongoing conversations around stories, themes, and cinematic possibilities — rather than one-time submissions.
+
+
+
+
+🎬 Directors & Visual Creators
+
+
+Directors & Visual Creators is an open invitation to filmmakers who see cinema as a medium of ideas, emotion, and visual storytelling.
+
+
+NGC welcomes directors and visual creators who are passionate about shaping stories through vision, performance, and imagery. This space is for creators who want to collaborate creatively, explore narratives together, and participate in the journey of transforming ideas into global cinema.
+
+
+We seek long-term creative collaboration — meaningful conversations around stories, direction, and cinematic expression — rather than one-off project engagements.
+
+
+🎼 Music & Sound Creators
+
+
+Music & Sound Creators is an open invitation to composers and sound artists who believe in the emotional power of cinema.
+
+
+NGC welcomes music and sound creators who are passionate about shaping mood, rhythm, and emotion through sound. This space is for creators who want to collaborate creatively, develop musical and sonic identities, and explore how sound can elevate stories into powerful cinematic experiences.
+
+
+We seek long-term creative collaboration — ongoing dialogue around music, sound, and storytelling — rather than isolated commissions.
+
+
+
+
+
+
+
+
+Main menu 3:
+
+
+VFX SERVICES
+ ├─ NGC Pipeline
+ ├─ International VFX Services
+ └─ Studio Partners
+
+
+
+
+Main menu 4:
+change "investors and partners" to "INVESTORS & PRODUCERS"
+
+
+/*Collaborate with NGC on building global cinema and long-term creative ventures.
+
+
+Nature Guru Creations collaborates with investors, producers, and production partners who share a long-term vision for creating high-quality global cinema.
+
+
+Investors
+Strategic and financial partners for vfx/cg studio growth.
+
+
+Producers 
+Project-based and IP-led production collaborations.
+
+
+Form
+
+
+
+
+Main menu 5:
+IP Distribution & OTT Connect
+
+
+Global Theatrical Distribution
+(Cinema releases across international territories)
+
+
+OTT Platform Enquiries
+(Direct engagement with streaming platforms)
+
+
+Multi-Language & Regional Releases
+(Dubbed, subtitled, and localized versions)
+
+
+Form
+
+
+
+
+
+
+Main menu 6:
+
+
+ CAREERS & TRAINING
+
+
+VFX Careers
+
+
+Internships & Training
+
+
+form
+
+
+
+
+8. MEDIA
+
+
+News
+
+
+Press Releases
+
+
+Events
+
+
+images & text
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15-03-2026
+
+
+Add one submenu under global cinema -  “The Science of Storytelling”
+
+
+About
+Nature Guru Creations is a filmmaking studio focused on creating original films and series for global audiences, while also delivering world-class VFX & CG execution for international productions through a robust, engineering-driven pipeline.
+
+
+“Technology • Emotion • Story — The Future of Cinema.”
+🌟 Our Vision
+To build a global ecosystem where creativity, technology, and integrity unite — empowering storytellers to craft unforgettable cinematic experiences.
+We invite producers, directors, innovators, and investors to join us in this movement —
+a creative force committed to reshaping the future of filmmaking.
+________________
+
+
+Stay Connected
+Together, we create.
+Together, we innovate.
+Together, we inspire.
+
+
+—---
+
+
+
+
+Social media handles at page bottom bar
+
+
+Top Menu bar - disappears when scroll down and when mouse rolls up.. It will reappear.. With slight movement gradually
+
+
+Creative collABORATION submenus inka right ki align chesi vere grey isthe better.. To show separation..
+
+
+
+
+We will move vendors to careers section take suggestions..
+
+
+
+
+
+
+—--------
+
+
+16-03-2026
+
+
+1. Under global cinema creation We will add  “NGC- the science of storytelling“ submenu
+
+
+Remove “co-productions” for now to make easy and clear
+
+
+
+
+2. Change “Our pipeline” to “NGC technology and Vfx pipeline”
+
+
+Remove “Vfx/cg outsource vendors” for now
+
+
+
+
+
+
+
+
+
+
+About NGC
+
+
+Who We Are
+Founded in 2024, Nature Guru Creations (NGC) is a high-end visual effects and full-CG filmmaking studio driven by a passionate core team with over two decades of global VFX experience — across Hollywood productions, Indian cinema, international advertising brands, and artistic animated episodic shows.
+Our foundation blends art, science, and storytelling.
+ Having studied life sciences, natural patterns, and human behavior, we use that understanding to craft visuals that carry depth, rhythm, and emotion.
+NGC was born with a clear purpose — to solve the recurring challenges in the VFX ecosystem by offering a seamless creative and technical bridge from concept to delivery.
+
+
+–
+
+
+Add one submenu under global cinema -  “The Science of Storytelling”
+
+
+Use it in three places:
+1. Under the NGC logo
+
+
+ NGC — The Science of Storytelling
+
+
+2. In the “What We Do” section
+
+
+ The Science of Storytelling
+
+
+3. In the footer
+
+
+ Nature Guru Creations — The Science of Storytelling
+
+
+
+
+NGC - The Science of Storytelling
+At NGC, storytelling is not just an art — it is a science of precision and creativity.
+We follow technically correct methods and proven workflows to minimize risks and avoid failures during production.
+Our approach is scientific, structured, and disciplined, ensuring that every creative idea is translated into visuals with clarity, efficiency, and quality.
+From the  fivery first spark of an idea to thenal delivery, we guide and execute the entire filmmaking journey with a carefully designed methodology.
+________________
+
+
+Our End-to-End Creative Process
+We are professionals, artists, and innovators .
+We manage the complete pipeline, including:
+   * Ideation & Concept Development
+
+   * Creative Writing & Story Design
+
+   * Visualisation & Storyboarding
+
+   * Previsualisation (Previs)
+
+   * VFX/CG Planning & Supervision
+
+   * Budgeting & Technical Strategy
+
+   * Pipeline Integration & Tools Development
+
+   * VFX Production & Simulation
+
+   * Quality Control & Final Delivery
+
+Our AI-augmented pipeline integrates advanced tools into every stage — from previsualization to compositing and DI — ensuring efficiency, realism, and creative control. 
+This scientific workflow allows filmmakers to focus on storytelling while we ensure that technology, visuals, and execution align perfectly with the creative vision.
+
+
+________________
+
+
+Our Philosophy
+At NGC, we believe that great storytelling emerges when emotion meets precision.
+By combining creative intuition with scientific methodology, we transform complex cinematic ideas into seamless, high-quality visual experiences.
+
+
+—---
+Our Approach
+
+
+ At NGC, we make it accessible, efficient, and inspiring.
+We welcome all filmmakers — from new voices to established creators.
+ Our goal is to collaborate, support, and elevate every vision, regardless of scale.
+We:
+      * Simplify production complexities
+
+      * Balance cost with quality to maximize creative value
+
+      * Offer transparent processes and clear communication
+
+      * Empower creators to focus on storytelling while we manage precision and delivery
+
+Our background — spanning Hollywood to regional Indian industries — gives us the ability to judge each project with global standards and local wisdom.
+________________
+
+
+
+
+
+
+—--
+Change “Our pipeline” to “NGC Technology & VFX Pipeline”
+
+
+
+
+NGC Technology & VFX Pipeline – The Creative Engineering of Cinema
+         * Overview:
+
+ NGC operates with a hybrid ACES-driven, Unreal + Houdini + Maya + Katana + Nuke + Baselight pipeline tightly integrated by AI tools in every stage of production, ensuring film-grade realism at optimized cost and time.
+
+
+         * Pipeline :
+
+            1. Story & Previz – Concept → Storyboard → Unreal
+
+            2. Assets Modeling & Sculpting – Maya / ZBrush / Houdini
+
+            3. Surfacing & LookDev – Substance / Mari / Katana / Arnold
+
+            4. Animation & CFX – Maya + Houdini (Muscle, Groom, FX, Cloth)
+
+            5. Lighting & Rendering –  Katana / Karma XPU / Arnold / RenderMan
+            6. Compositing & DI – Nuke + Baselight
+
+            7. Final Delivery & DI Mastering – 4K / 8K HDR ACES
+
+               * Subsection:
+ “We believe a perfect shot is where art, physics, and faith meet.”
+
+               * Logos / Icons: Unreal, Houdini, Maya, Mari, Katana, Nuke, Baselight, ACES, USD.
+
+
+
+
+
+
+
+
+
+
+
+
+—---
+
+
+
+
+International VFX / CG Services
+One-Line Version (For Homepage)
+High-end VFX and CG execution for global films and series, delivered through NGC’s integrated production pipeline.
+
+
+NGC provides high-end visual effects and CG production services for international film studios, OTT platforms, advertising agencies, and creative production companies.
+Working through a robust and tightly integrated pipeline, NGC collaborates with global studios, producers, and production teams to execute complex visual sequences, digital environments, and CG-driven storytelling at cinematic scale.
+This division represents NGC’s technical and artistic execution capability, supporting productions that require reliable, high-quality VFX and CG solutions.
+________________
+
+
+Our International Capabilities
+We support global projects across multiple stages of production:
+VFX Supervision & Planning
+                  * Script breakdown and VFX planning
+
+                  * On-set VFX supervision
+
+                  * Production design consultation
+
+CG Asset & Environment Creation
+                     * Digital environments and world-building
+
+                     * Photorealistic CG assets and characters
+
+                     * Matte painting and environment extensions
+
+Simulation & Effects
+                        * Destruction, explosions, and dynamic simulations
+
+                        * Water, smoke, fire, and atmospheric effects
+
+                        * Crowd and creature simulations
+Lighting, Rendering & Look Development
+Physically accurate lighting and rendering pipelines to achieve cinematic realism and consistency across shots and sequences.
+
+
+Compositing & Final Integration
+Shot-level compositing, visual integration, and final image finishing to match production plates and delivery standards.
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+Our Pipeline Advantage
+NGC operates with a modern, integrated pipeline designed for global collaboration.
+                           * Advanced AI-assisted tools integrated into the production workflow
+
+                           * Seamless previsualization to final compositing pipeline
+
+                           * Industry-standard tools including Zbrush, Maya, Mari, Houdini, Unreal, Nuke, and DI pipelines
+
+                           * Efficient remote collaboration with international production teams
+
+Our pipeline ensures consistent quality, predictable timelines, and smooth integration with global post-production workflows.
+
+
+________________
+
+
+Collaboration Approach
+NGC works closely with international production teams through:
+                              * Supervisor-led workflows
+
+                              * Secure production pipelines
+
+                              * Shot tracking and review systems
+
+                              * Integrated asset and version management
+
+This approach ensures transparency, reliability, and high-quality delivery across every stage of production.
+
+
+
+
+
+
+—------------------------
+
+
+
+
+
+
+Careers & Talent Hub
+
+
+We welcome artists from around the world in departments like Modeling, sculpting, Texturing, Rigging, Lookdev, CFX, Lighting, FX, Animation, Unreal, Nuke, DI, and AI R&D, pipeline developers
+
+
+                                 * Open Roles / Departments:
+
+                                    * Concept / Storyboard
+
+                                    * Modeling / Sculpting
+
+                                    * Grooming / CFX / FX
+
+                                    * Animation / Rigging / Muscles
+
+                                    * Lighting / Compositing
+
+                                    * Unreal / DI / AI Tools
+
+                                       * CTA: “Apply Now” | “Internship Program” | “Join Talent Pool”
+
+                                       * Footer Section:
+
+                                          * Studio Address (G2, Elite Residency, Road no 27, Alkapur Township, Neknampur Village, Hyderabad, Telangana - 500089, India)
+
+                                          * Email for careers and collaborations
+
+                                          * Social links (LinkedIn, Vimeo, ArtStation, Instagram)
+                                             * —-----
+
+
+
+
+Sample idea for Investors section:
+Expression of Interest (EOI)
+Headline:
+“Partner. Invest. Create. Collaborate.”
+Intro Paragraph:
+Nature Guru Creations invites producers, investors, studios, and collaborators to express interest in partnering with us.
+Whether you want to co-produce, invest, or develop new IP, this is your gateway to joining our global creative network.
+Form Fields:
+                                             * Name
+
+                                             * Company / Organization
+
+                                             * Country / Region
+
+                                             * Email
+
+                                             * Interest Type (Producer / Investor / Artist / Studio / Other)
+
+                                             * Message / Proposal
+
+                                             * NDA Checkbox (“I agree to share my expression of interest for NGC’s review under confidentiality.”)
+
+CTA: “Submit Expression of Interest”
+Post Message:
+Our partnerships team will contact you within 5–7 business days.
+—------
+
+
+Emails:
+                                                * Business: partnerships@naturegurucreations.com
+                                                * Careers: talent@naturegurucreations.com
+                                                * Media: connect@naturegurucreations.com
+                                                * Tagline:
+
+
+
+
+
+
+—---
+
+
+17-03-2026
+
+
+Top footer
+                                                1. Make  logo bigger…  make font sizes bit bigger for readability..  
+
+
+                                                2. Always try to use grey where ever we use text for titles.. Grey (menus lo unna grey is good for readability) plus light red instead thick red.. Thick red only for main logo and tiger image area.. Rest will be less intense. Will give sample images..
+  
+
+Follow these colors every where.. Even in menus as well.. 
+For submenus try to avoid bold letters.. Will see a version for better judgement..
+
+
+                                                3. 
+
+  
+
+
+
+Is it possible to avoid left and right empty areas as in ilm website? 
+
+
+4.
+Horizontal arrangements..  reference
+  
+
+                                                1. Black, red, consistent font size for heading, sub heading, normal text

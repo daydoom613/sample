@@ -14,7 +14,7 @@ export default function MenuItem({ item, level = 0 }: Props) {
       <div className="group relative">
         <Link
           href={item.href}
-          className="flex items-center justify-between px-2 py-1 text-sm text-gray-600 hover:text-red-500 whitespace-nowrap hover:border-red-500 border-2 border-transparent rounded-md transition-all duration-300 ease-in-out hover:scale-110"
+          className="flex items-center justify-between px-2 py-1 text-sm text-gray-600 font-mono hover:text-[var(--ngc-accent)] whitespace-nowrap hover:border-[var(--ngc-accent)] border-2 border-transparent rounded-md transition-all duration-300 ease-in-out hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--ngc-accent)]"
         >
           {item.title.toUpperCase()}
           {hasSub && <span className="ml-2">›</span>}
@@ -31,6 +31,7 @@ export default function MenuItem({ item, level = 0 }: Props) {
               min-w-64 px-5 py-3 shadow-lg rounded-md
               opacity-0 invisible
               group-hover:opacity-100 group-hover:visible
+              group-focus-within:opacity-100 group-focus-within:visible
               transition-all duration-200
             `}
           >

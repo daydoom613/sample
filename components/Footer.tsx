@@ -7,6 +7,8 @@ import {
   Palette,
   Video,
 } from "lucide-react";
+import { getSocialLinks } from "@/lib/social";
+import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
 
 const ADDRESS =
   "G2, Elite Residency, Road no 27, Alkapur Township, Neknampur Village, Hyderabad, Telangana - 500089, India";
@@ -17,16 +19,33 @@ const EMAILS = {
   media: "connect@naturegurucreations.com",
 };
 
+const iconFor = (label: string) => {
+  switch (label) {
+    case "LinkedIn":
+      return Linkedin;
+    case "Instagram":
+      return Instagram;
+    case "Vimeo":
+      return Video;
+    case "ArtStation":
+      return Palette;
+    default:
+      return Linkedin;
+  }
+};
+
 export default function Footer() {
+  const socialLinks = getSocialLinks();
+
   return (
     <footer className="bg-gray-300 border-t border-red-600 py-16 mt-24">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
         <div className="col-span-1 md:col-span-2 space-y-6">
           <div className="flex items-center gap-3">
-            <h2 className="text-xl font-bold tracking-tight uppercase">
-              <span className="text-red-600">
-                Nature Guru Creations — The Science of Storytelling
-              </span>
+            <h2 className="text-xl font-bold tracking-tight uppercase ngc-heading-plain">
+              {ngcBrandLeadingText(
+                "Nature Guru Creations — The Science of Storytelling",
+              )}
             </h2>
           </div>
           <p className="text-slate-800 max-w-sm text-justify">
@@ -75,7 +94,7 @@ export default function Footer() {
           </div>
         </div>
         <div>
-          <h4 className="font-bold mb-6 uppercase tracking-widest text-xs text-red-600">
+          <h4 className="font-bold mb-6 uppercase tracking-widest text-xs">
             Company
           </h4>
           <ul className="space-y-4 text-sm text-gray-800">
@@ -101,24 +120,41 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link className="hover:text-red-600 transition-colors" href="/investors">
+              <Link
+                className="hover:text-red-600 transition-colors"
+                href="/investors"
+              >
                 Investors & Partners
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="hover:text-red-600 transition-colors"
+                href="/contact"
+              >
+                Contact
               </Link>
             </li>
           </ul>
         </div>
         <div>
-          <h4 className="font-bold mb-6 uppercase tracking-widest text-xs text-red-600">
+          <h4 className="font-bold mb-6 uppercase tracking-widest text-xs">
             Services
           </h4>
           <ul className="space-y-4 text-sm text-gray-700">
             <li>
-              <Link className="hover:text-red-600 transition-colors" href="/services">
+              <Link
+                className="hover:text-red-600 transition-colors"
+                href="/services"
+              >
                 International VFX / CG Services
               </Link>
             </li>
             <li>
-              <Link className="hover:text-red-600 transition-colors" href="/pipeline">
+              <Link
+                className="hover:text-red-600 transition-colors"
+                href="/pipeline"
+              >
                 NGC Technology & VFX Pipeline
               </Link>
             </li>
@@ -131,7 +167,10 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link className="hover:text-red-600 transition-colors" href="/career">
+              <Link
+                className="hover:text-red-600 transition-colors"
+                href="/career"
+              >
                 Careers & Talent Hub
               </Link>
             </li>
@@ -139,44 +178,33 @@ export default function Footer() {
         </div>
       </div>
       <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
-        <p>© 2025 Nature Guru Creations. All rights reserved.</p>
+        <p>© 2026 Nature Guru Creations. All rights reserved.</p>
         <div className="flex flex-wrap items-center gap-6">
-          <a
-            className="inline-flex items-center gap-2 hover:text-slate-800 transition-colors"
-            href="https://www.linkedin.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Linkedin className="size-4" />
-            LinkedIn
-          </a>
-          <a
-            className="inline-flex items-center gap-2 hover:text-slate-800 transition-colors"
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Instagram className="size-4" />
-            Instagram
-          </a>
-          <a
-            className="inline-flex items-center gap-2 hover:text-slate-800 transition-colors"
-            href="https://vimeo.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Video className="size-4" />
-            Vimeo
-          </a>
-          <a
-            className="inline-flex items-center gap-2 hover:text-slate-800 transition-colors"
-            href="https://www.artstation.com/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Palette className="size-4" />
-            ArtStation
-          </a>
+          {socialLinks.map((s) => {
+            const Icon = iconFor(s.label);
+            const className =
+              "inline-flex items-center gap-2 hover:text-slate-800 transition-colors";
+            if (s.external) {
+              return (
+                <a
+                  key={s.label}
+                  className={className}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Icon className="size-4" />
+                  {s.label}
+                </a>
+              );
+            }
+            return (
+              <Link key={s.label} className={className} href={s.href}>
+                <Icon className="size-4" />
+                {s.label}
+              </Link>
+            );
+          })}
         </div>
       </div>
     </footer>
