@@ -8,7 +8,6 @@ const paths = [
   "/global-cinema-creation/ip-partners",
   "/global-cinema-creation/collaborations",
   "/global-cinema-creation/the-science-of-storytelling",
-  "/international",
   "/services",
   "/pipeline",
   "/investors",

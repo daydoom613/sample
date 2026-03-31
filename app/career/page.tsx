@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { CheckCircle2, Mail, MapPin } from "lucide-react";
 import type { Metadata } from "next";
 import PageIntro from "@/components/page/PageIntro";
@@ -8,6 +7,7 @@ import {
   contentCardClass,
   contentSectionTitleClass,
 } from "@/components/page/contentStyles";
+import CareersInterestForm from "@/components/career/CareersInterestForm";
 
 export const metadata: Metadata = {
   title: "Careers & Talent Hub",
@@ -84,31 +84,8 @@ export default function CareerPage() {
           ))}
         </div>
 
-        <div className={`mt-12 ${contentCardClass}`}>
-          <div className="type-body font-semibold uppercase tracking-[0.14em] text-[var(--ngc-accent)]">
-            Apply
-          </div>
-          <h3 className="type-heading mt-4">Ready to work with us?</h3>
-          <div className="mt-7 flex flex-col sm:flex-row gap-4">
-            <Link
-              href="mailto:talent@naturegurucreations.com"
-              className="inline-flex items-center justify-center rounded-xl bg-[var(--ngc-accent)] text-white font-semibold px-7 py-4 hover:opacity-95 transition-opacity"
-            >
-              Apply now
-            </Link>
-            <Link
-              href="mailto:talent@naturegurucreations.com?subject=Internship%20Program"
-              className="inline-flex items-center justify-center rounded-xl border border-black/10 bg-white text-[var(--ngc-text-primary)] font-semibold px-7 py-4 hover:bg-black/5 transition-colors"
-            >
-              Internship program
-            </Link>
-            <Link
-              href="mailto:talent@naturegurucreations.com?subject=Talent%20Pool"
-              className="inline-flex items-center justify-center rounded-xl border border-black/10 bg-white text-[var(--ngc-text-primary)] font-semibold px-7 py-4 hover:bg-black/5 transition-colors"
-            >
-              Join talent pool
-            </Link>
-          </div>
+        <div className="mt-12">
+          <CareersInterestForm />
         </div>
       </PageSection>
 

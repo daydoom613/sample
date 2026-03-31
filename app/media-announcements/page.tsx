@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { Metadata } from "next";
 import PageIntro from "@/components/page/PageIntro";
 import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
@@ -17,11 +16,6 @@ export default function MediaAnnouncementsPage() {
       <PageIntro
         title={ngcBrandLeadingText("Media & announcements")}
         tagline="Press • Awards • Behind the scenes."
-        image={{
-          src: "/press1.png",
-          alt: "Nature Guru Creations — media and press",
-          priority: true,
-        }}
       >
         <p>
           Press enquiries, screening notices, and partnership news. For media
@@ -34,14 +28,6 @@ export default function MediaAnnouncementsPage() {
         <AbadamevaJayatheSpotlight />
       </PageSection>
 
-      <PageSection className="pt-0 pb-28">
-        <Link
-          href="/contact"
-          className="inline-flex rounded-lg bg-[var(--ngc-accent)]/15 border border-[var(--ngc-accent)]/40 px-6 py-3 type-body font-semibold text-[var(--ngc-text-primary)] hover:bg-[var(--ngc-accent)]/25 transition-colors"
-        >
-          Contact media
-        </Link>
-      </PageSection>
     </div>
   );
 }

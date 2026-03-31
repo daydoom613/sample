@@ -90,15 +90,15 @@ export default function IpPartnersPage() {
             return (
               <div
                 key={p.title}
-                className={`${contentCardClass} bg-[var(--ngc-accent)] border-[var(--ngc-accent)]/30 text-white`}
+                className={`${contentCardClass} text-[var(--ngc-text-primary)]`}
               >
                 <div className="size-16 rounded-lg bg-white flex items-center justify-center text-[var(--ngc-accent)] border border-black/10">
                   <Icon className="size-10" />
                 </div>
-                <h3 className="type-subheading mt-6 mb-4 ngc-heading-plain text-white">
+                <h3 className="type-subheading mt-6 mb-4">
                   {p.title}
                 </h3>
-                <ul className="space-y-3 type-body text-white/95">
+                <ul className="space-y-3 type-body text-[var(--ngc-text-secondary)]">
                   {p.items.map((item) => (
                     <li key={item} className="flex gap-2">
                       <Check className="text-[var(--ngc-accent)] bg-white rounded-full size-5 p-0.5 shrink-0" />

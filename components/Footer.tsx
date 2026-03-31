@@ -8,7 +8,6 @@ import {
   Video,
 } from "lucide-react";
 import { getSocialLinks } from "@/lib/social";
-import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
 
 const ADDRESS =
   "G2, Elite Residency, Road no 27, Alkapur Township, Neknampur Village, Hyderabad, Telangana - 500089, India";
@@ -38,29 +37,34 @@ export default function Footer() {
   const socialLinks = getSocialLinks();
 
   return (
-    <footer className="bg-gray-300 border-t border-red-600 py-16 mt-24">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
-        <div className="col-span-1 md:col-span-2 space-y-6">
+    <footer className="bg-[#f9f9f9] border-t border-black/10 py-9 mt-20 text-[#424240]">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="space-y-4">
           <div className="flex items-center gap-3">
-            <h2 className="text-xl font-bold tracking-tight uppercase ngc-heading-plain">
-              {ngcBrandLeadingText(
-                "Nature Guru Creations — The Science of Storytelling",
-              )}
+            <h2 className="text-xl font-bold tracking-tight uppercase leading-tight">
+              <span>Nature Guru Creations —</span>
+              <br />
+              <span>The Science of Storytelling</span>
             </h2>
           </div>
-          <p className="text-slate-800 max-w-sm text-justify">
+          <p className="max-w-sm text-sm text-justify">
             Nature Guru Creations is a filmmaking studio focused on creating
             original films and series for global audiences, while also
             delivering world-class VFX & CG execution for international
             productions through a robust, engineering-driven pipeline.
           </p>
-          <div className="space-y-2 text-sm text-slate-800">
+        </div>
+        <div>
+          <h4 className="font-bold mb-4 uppercase tracking-widest text-xs">
+            Contact
+          </h4>
+          <div className="space-y-3 text-sm">
             <div className="flex items-start gap-2">
-              <MapPin className="mt-0.5 size-4 text-red-600" />
+              <MapPin className="mt-0.5 size-4 text-[var(--ngc-accent)] shrink-0" />
               <span>{ADDRESS}</span>
             </div>
             <div className="flex items-start gap-2">
-              <Mail className="mt-0.5 size-4 text-red-600" />
+              <Mail className="mt-0.5 size-4 text-[var(--ngc-accent)] shrink-0" />
               <div className="space-y-1">
                 <div>
                   Business:{" "}
@@ -94,26 +98,18 @@ export default function Footer() {
           </div>
         </div>
         <div>
-          <h4 className="font-bold mb-6 uppercase tracking-widest text-xs">
+          <h4 className="font-bold mb-4 uppercase tracking-widest text-xs">
             Company
           </h4>
-          <ul className="space-y-4 text-sm text-gray-800">
+          <ul className="space-y-3 text-sm">
             <li>
-              <Link className="hover:text-red-600 transition-colors" href="/">
+              <Link className="hover:text-[var(--ngc-accent)] transition-colors" href="/">
                 About
               </Link>
             </li>
             <li>
               <Link
-                className="hover:text-red-600 transition-colors"
-                href="/global-cinema-creation/ngc-originals"
-              >
-                Originals
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="hover:text-red-600 transition-colors"
+                className="hover:text-[var(--ngc-accent)] transition-colors"
                 href="/global-cinema-creation"
               >
                 Global Cinema Creation
@@ -121,30 +117,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                className="hover:text-red-600 transition-colors"
-                href="/investors"
-              >
-                Investors & Partners
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="hover:text-red-600 transition-colors"
-                href="/contact"
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="font-bold mb-6 uppercase tracking-widest text-xs">
-            Services
-          </h4>
-          <ul className="space-y-4 text-sm text-gray-700">
-            <li>
-              <Link
-                className="hover:text-red-600 transition-colors"
+                className="hover:text-[var(--ngc-accent)] transition-colors"
                 href="/services"
               >
                 International VFX / CG Services
@@ -152,38 +125,30 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                className="hover:text-red-600 transition-colors"
-                href="/pipeline"
-              >
-                NGC Technology & VFX Pipeline
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="hover:text-red-600 transition-colors"
-                href="/global-cinema-creation/the-science-of-storytelling"
-              >
-                The Science of Storytelling
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="hover:text-red-600 transition-colors"
+                className="hover:text-[var(--ngc-accent)] transition-colors"
                 href="/career"
               >
-                Careers & Talent Hub
+                Career & Talent Hub
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="hover:text-[var(--ngc-accent)] transition-colors"
+                href="/contact"
+              >
+                Contact
               </Link>
             </li>
           </ul>
         </div>
       </div>
-      <div className="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+      <div className="max-w-7xl mx-auto px-6 mt-8 pt-4 border-t border-black/10 flex flex-col md:flex-row justify-between items-center gap-3 text-xs">
         <p>© 2026 Nature Guru Creations. All rights reserved.</p>
         <div className="flex flex-wrap items-center gap-6">
           {socialLinks.map((s) => {
             const Icon = iconFor(s.label);
             const className =
-              "inline-flex items-center gap-2 hover:text-slate-800 transition-colors";
+              "inline-flex items-center gap-2 hover:text-[var(--ngc-accent)] transition-colors";
             if (s.external) {
               return (
                 <a

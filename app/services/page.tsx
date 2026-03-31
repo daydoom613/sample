@@ -82,6 +82,7 @@ export default function ServicesPage() {
           src: "/vfxPoster.jpg",
           alt: "VFX and CG work at Nature Guru Creations",
           priority: true,
+          fit: "contain",
         }}
       >
         <p>

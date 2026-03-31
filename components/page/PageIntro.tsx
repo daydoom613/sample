@@ -16,10 +16,11 @@ type Props = {
   children: ReactNode;
   tagline?: ReactNode;
   stats?: PageIntroStat[];
-  image: {
+  image?: {
     src: string;
     alt: string;
     priority?: boolean;
+    fit?: "cover" | "contain";
   };
 };
 
@@ -36,7 +37,7 @@ export default function PageIntro({
 }: Props) {
   return (
     <section className="py-24 px-6 max-w-7xl mx-auto">
-      <div className="grid lg:grid-cols-2 gap-16 items-center">
+      <div className={`grid ${image ? "lg:grid-cols-2" : "lg:grid-cols-1"} gap-16 items-center`}>
         <div className="space-y-8">
           {kicker ? (
             <div className="inline-block px-4 py-1 border border-gray-300 type-body text-gray-600 font-semibold uppercase tracking-[0.14em] rounded-full">
@@ -67,19 +68,21 @@ export default function PageIntro({
             </div>
           ) : null}
         </div>
-        <div className="relative group">
-          <div className="absolute -inset-1 bg-linear-to-r from-primary to-gold rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000" />
-          <div className="relative rounded-xl overflow-hidden aspect-video shadow-2xl">
-            <Image
-              src={image.src}
-              alt={image.alt}
-              className="object-cover object-center"
-              fill
-              sizes="(min-width: 1024px) 50vw, 100vw"
-              priority={image.priority}
-            />
+        {image ? (
+          <div className="relative group">
+            <div className="absolute -inset-1 bg-linear-to-r from-primary to-gold rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000" />
+            <div className="relative rounded-xl overflow-hidden aspect-video shadow-2xl bg-black/5">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                className={`${image.fit === "contain" ? "object-contain p-2" : "object-cover"} object-center`}
+                fill
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                priority={image.priority}
+              />
+            </div>
           </div>
-        </div>
+        ) : null}
       </div>
     </section>
   );

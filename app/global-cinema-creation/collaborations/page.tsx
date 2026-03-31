@@ -206,47 +206,6 @@ export default function CollaborationsPage() {
           </div>
         </div>
       </section>
-      <section className="max-w-7xl mx-auto px-6 py-24 text-center">
-        <div className="glass-card max-w-4xl mx-auto rounded-3xl p-12 md:p-20 space-y-8 border-primary/20 bg-primary/[0.02]">
-          <h3 className="ngc-heading-plain text-3xl font-bold tracking-tight italic text-[var(--ngc-text-primary)]">
-            &quot;We value the artist&apos;s voice over the project&apos;s
-            budget. Our goal is to foster a safe haven for wild ideas and
-            long-term creative stability.&quot;
-          </h3>
-          <div className="flex flex-col items-center gap-2">
-            <div
-              className="w-12 h-12 rounded-full bg-cover bg-center bg-[url('https://lh3.googleusercontent.com/aida-public/AB6AXuC4Ssu2qxii2kBKZDvv1b3eIq9I26jzceO-l82M2LQN_Rvi5gxepqBhorrpFaPmVl-LzHoU3Suh5ybVYEog1VBGinjW7IOLc0pVHhEC6nyivEx6mUC-MFbxfCQwH2SJLXWfO5oRhZoMwhCigwRpXkQm9JNqI-ZISbWsgU-CGfh1ui1CDJrJrztOxTZoGTQIP8Y7od2nBf1xUQS2g3jAqCqb-i8zjD5CtAh9TBTGdAcpsCF9uOo2eKmkgJsmI2K0zcWb66TbVyW9TiL1')]"
-              data-alt="Portrait of the creative director"
-            ></div>
-            <div>
-              <p className="font-bold">Julian Vane</p>
-              <p className="text-xs text-primary font-medium tracking-widest uppercase">
-                Founder &amp; Creative Director
-              </p>
-            </div>
-          </div>
-          <div className="pt-8 border-t border-white/5 flex flex-wrap justify-center gap-12">
-            <div className="text-center">
-              <p className="text-2xl font-bold text-red-600">12</p>
-              <p className="text-xs text-slate-600 uppercase tracking-widest">
-                Active Partnerships
-              </p>
-            </div>
-            <div className="text-center">
-              <p className="text-2xl font-bold text-red-600">45</p>
-              <p className="text-xs text-slate-600 uppercase tracking-widest">
-                Awards Won
-              </p>
-            </div>
-            <div className="text-center">
-              <p className="text-2xl font-bold text-red-600">3</p>
-              <p className="text-xs text-slate-600 uppercase tracking-widest">
-                Ongoing Universes
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

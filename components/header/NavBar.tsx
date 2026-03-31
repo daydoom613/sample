@@ -65,27 +65,27 @@ export default function NavBar() {
   }, [mobileOpen]);
 
   return (
-    <nav className="bg-white/75 backdrop-blur-md w-full flex items-center justify-between px-5 py-4 text-sm text-gray-600 gap-5">
-      <Link href="/" className="flex items-center gap-2.5 shrink-0">
+    <nav className="bg-white/75 backdrop-blur-md w-full flex items-center justify-between px-7 py-5 text-base text-gray-600 gap-7">
+      <Link href="/" className="flex items-center gap-3.5 shrink-0">
         <Image
           src="/Logo (2).png"
           alt="NGC"
-          width={52}
-          height={52}
+          width={62}
+          height={62}
           priority
         />
         <div className="leading-[1.05]">
-          <div className="text-2xl font-black tracking-tight text-gray-900 drop-shadow-[0_4px_10px_rgba(0,0,0,0.28)]">
+          <div className="text-[2.05rem] font-black tracking-tight text-gray-900 drop-shadow-[0_4px_10px_rgba(0,0,0,0.28)]">
             <span className="text-[#049518]">N</span>
             <span className="text-[#EA2F2F]">GC</span>
           </div>
-          <div className="text-[12px] font-semibold uppercase tracking-[0.05em] text-gray-500 mt-0.5">
+          <div className="text-[13px] font-semibold uppercase tracking-[0.06em] text-gray-500 mt-1">
             The Science of Storytelling
           </div>
         </div>
       </Link>
 
-      <div className="hidden lg:flex items-center gap-5 flex-wrap justify-end">
+      <div className="hidden lg:flex items-center gap-7 flex-wrap justify-end">
         {NAV_MENU.map((menuItem, idx) => (
           <div
             key={menuItem.title}

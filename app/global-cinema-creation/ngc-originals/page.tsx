@@ -3,7 +3,6 @@ import {
   Globe,
   Handshake,
   Lightbulb,
-  Quote,
   SquarePen,
   Videotape,
 } from "lucide-react";
@@ -28,7 +27,6 @@ export default function NgcOriginalsPage() {
   return (
     <>
       <PageIntro
-        kicker="Deep dive series"
         title={ngcBrandLeadingText("What defines an NGC Original")}
         tagline="Bridging nature and high-end filmmaking through our production DNA."
         image={{
@@ -93,23 +91,6 @@ export default function NgcOriginalsPage() {
         </div>
       </PageSection>
 
-      <PageSection className="bg-slate-900 text-center relative overflow-hidden py-28">
-        <div
-          className="absolute inset-0 opacity-25 pointer-events-none bg-cover bg-center grayscale contrast-125 bg-[url('/reference_PageOne_01vTheme_02v01.png')]"
-          aria-hidden
-        />
-        <div className="max-w-4xl mx-auto relative z-10 px-2">
-          <Quote className="text-white size-16 mx-auto opacity-90" />
-          <h3 className="ngc-heading-plain text-white type-heading italic leading-tight mt-8 mb-8">
-            &quot;We don&apos;t just film nature; we capture the spirit of the
-            wild and present it with a cinematic grandeur that inspires
-            action.&quot;
-          </h3>
-          <div className="text-white font-semibold tracking-widest type-body uppercase opacity-90">
-            — Marcus Sterling, Lead Visionary
-          </div>
-        </div>
-      </PageSection>
     </>
   );
 }
@@ -124,15 +105,13 @@ function PillarCard({
   body: string;
 }) {
   return (
-    <div
-      className={`${contentCardClass} group flex flex-col gap-6 bg-red-800 border-red-900/20 text-white shadow-none`}
-    >
-      <div className="flex size-14 items-center justify-center rounded-lg bg-white text-[var(--ngc-accent)] transition-transform group-hover:scale-110">
+    <div className={`${contentCardClass} group flex flex-col gap-6`}>
+      <div className="flex size-14 items-center justify-center rounded-lg bg-[var(--ngc-accent)]/15 text-[var(--ngc-accent)] transition-transform group-hover:scale-110">
         <Icon className="size-7" />
       </div>
       <div className="flex flex-col gap-3">
-        <h3 className="type-subheading ngc-heading-plain text-white">{title}</h3>
-        <p className="type-body text-gray-200 leading-relaxed">{body}</p>
+        <h3 className="type-subheading">{title}</h3>
+        <p className="type-body text-[var(--ngc-text-secondary)] leading-relaxed">{body}</p>
       </div>
     </div>
   );

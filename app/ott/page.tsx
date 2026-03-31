@@ -39,7 +39,7 @@ export default function OttPage() {
         </Link>
         <Link
           href="/contact"
-          className="inline-flex rounded-lg bg-[var(--ngc-accent)]/15 border border-[var(--ngc-accent)]/40 px-6 py-3 type-body font-semibold text-[var(--ngc-text-primary)] hover:bg-[var(--ngc-accent)]/25 transition-colors"
+          className="inline-flex rounded-lg border border-gray-300 px-6 py-3 type-body font-semibold text-[var(--ngc-text-primary)] hover:border-[var(--ngc-accent)] transition-colors"
         >
           Contact distribution
         </Link>

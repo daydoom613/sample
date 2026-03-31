@@ -4,11 +4,11 @@
   --ngc-accent: #f87171;
   --ngc-brand-first: #049518;
   --ngc-brand-rest: #f87171;
-  --ngc-text-primary: #374151;
-  --ngc-text-secondary: #6b7280;
+  --ngc-text-primary: #424240;
+  --ngc-text-secondary: #424240;
 }
 
-/* Headings: first letter brand green, rest light red (skip .ngc-heading-plain for custom styling) */
+/* Headings: keep single red tone site-wide (skip .ngc-heading-plain for custom styling) */
 h1:not(.ngc-heading-plain),
 h2:not(.ngc-heading-plain),
 h3:not(.ngc-heading-plain),
@@ -16,16 +16,6 @@ h4:not(.ngc-heading-plain),
 h5:not(.ngc-heading-plain),
 h6:not(.ngc-heading-plain) {
   color: var(--ngc-brand-rest);
-}
-
-h1:not(.ngc-heading-plain)::first-letter,
-h2:not(.ngc-heading-plain)::first-letter,
-h3:not(.ngc-heading-plain)::first-letter,
-h4:not(.ngc-heading-plain)::first-letter,
-h5:not(.ngc-heading-plain)::first-letter,
-h6:not(.ngc-heading-plain)::first-letter {
-  color: var(--ngc-brand-first);
-  font-weight: inherit;
 }
 
 body {

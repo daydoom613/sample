@@ -37,7 +37,6 @@ export default function ScienceOfStorytellingPage() {
   return (
     <div className="w-full">
       <PageIntro
-        kicker="Global cinema creation"
         title={ngcBrandLeadingText("NGC — The Science of Storytelling")}
         tagline="Technology • Emotion • Story — precision and creativity together."
         stats={[

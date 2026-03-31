@@ -18,11 +18,6 @@ export default function Home() {
           { value: "12+", label: "Global Awards" },
           { value: "500+", label: "VFX Shots Delivered" },
         ]}
-        image={{
-          src: "/about.avif",
-          alt: "Nature Guru Creations — natural history filmmaking and VFX",
-          priority: true,
-        }}
       >
         <p>
           Nature Guru Creations is a{" "}
@@ -232,50 +227,61 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="mt-10 text-center">
+          <Link
+            href="/global-cinema-creation/ngc-originals"
+            className="inline-flex items-center px-3 py-1.5 text-base text-[var(--ngc-text-primary)] hover:text-[var(--ngc-accent)] whitespace-nowrap hover:border-[var(--ngc-accent)] border-2 border-transparent rounded-md transition-all duration-300 ease-in-out hover:scale-105 type-body font-semibold"
+          >
+            Explore NGC Originals
+          </Link>
+        </div>
       </section>
       <section className="py-24 max-w-7xl mx-auto px-6">
-        <div className="rounded-2xl overflow-hidden flex flex-col md:flex-row shadow-2xl">
-          <div className="md:w-1/2 bg-black/5">
+        <div className="flex justify-between items-end mb-12">
+          <div>
+            <h2 className="type-heading uppercase mb-2">NGC VFX Services</h2>
+            <p className="type-body max-w-3xl">
+              Advanced digital character and CG execution for cinematic storytelling,
+              led through NGC&apos;s integrated production pipeline.
+            </p>
+          </div>
+          <Link
+            className="text-primary font-bold hover:scale-110 transition-transform"
+            href="/services"
+          >
+            View All
+          </Link>
+        </div>
+        <div className="grid md:grid-cols-1 gap-8 max-w-md mx-auto">
+          <Link
+            href="/media-announcements#abadameva-jayathe"
+            className="group relative rounded-lg overflow-hidden aspect-3/4 cursor-pointer"
+          >
             <Image
-              alt="Abadameva Jayathe — VFX and digital character work by Nature Guru Creations"
-              className="w-full h-auto object-contain"
-              data-alt="Abadameva Jayathe film artwork — Patela digital character VFX"
+              alt="Abadameva Jayathe poster — NGC VFX services"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               src="/vfxPoster.jpg"
-              sizes="(min-width: 768px) 50vw, 100vw"
-              width={1600}
-              height={900}
+              fill
+              sizes="(min-width: 1024px) 33vw, (min-width: 768px) 33vw, 100vw"
             />
-          </div>
-          <div className="md:w-1/2 p-12 flex flex-col justify-center space-y-6">
-            <p className="type-subheading italic text-[var(--ngc-accent)] font-normal tracking-[0.02em]">
-              Abadameva Jayathe
-            </p>
-            <h2 className="type-heading uppercase">NGC VFX Services</h2>
-            <p className="type-body text-justify">
-              Veteran actor Babu Mohan marks a first-of-its-kind milestone in
-              Telugu cinema by appearing as a hyper-realistic 3D digital
-              character in the film Abadameva Jayathe, where his character Patela
-              has been created entirely through advanced visual effects. Instead
-              of a traditional on-screen performance, the character has been
-              brought to life using cutting-edge CGI and performance-driven
-              digital artistry, preserving Babu Mohan&apos;s unmistakable
-              expressions and screen presence.
-            </p>
-            <div className="flex flex-wrap gap-3 pt-2">
-              <Link
-                href="/media-announcements#abadameva-jayathe"
-                className="inline-flex items-center bg-primary/10 border border-primary/50 text-primary hover:bg-primary hover:text-gray-600 px-6 py-3 rounded-lg font-bold transition-all uppercase tracking-widest type-body"
-              >
-                Full project story
-              </Link>
-              <Link
-                href="/services"
-                className="inline-flex items-center bg-primary/10 border border-primary/50 text-primary hover:bg-primary hover:text-gray-600 px-6 py-3 rounded-lg font-bold transition-all uppercase tracking-widest type-body"
-              >
-                Our services
-              </Link>
+            <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-80"></div>
+            <div className="absolute bottom-0 left-0 p-8 text-white">
+              <span className="text-gold type-body font-bold uppercase tracking-widest mb-2 block">
+                Abadameva Jayathe
+              </span>
+              <h3 className="type-subheading font-bold mb-4 ngc-heading-plain text-white">
+                Hyper-realistic 3D digital character—Patela
+              </h3>
             </div>
-          </div>
+          </Link>
+        </div>
+        <div className="mt-10 text-center">
+          <Link
+            href="/services"
+            className="inline-flex items-center px-3 py-1.5 text-base text-[var(--ngc-text-primary)] hover:text-[var(--ngc-accent)] whitespace-nowrap hover:border-[var(--ngc-accent)] border-2 border-transparent rounded-md transition-all duration-300 ease-in-out hover:scale-105 type-body font-semibold"
+          >
+            Explore NGC VFX Services
+          </Link>
         </div>
       </section>
       <section className="py-24">
@@ -320,7 +326,7 @@ export default function Home() {
             Awards, announcements, and behind the scenes.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-md">
           <Link
             href="/media-announcements#abadameva-jayathe"
             className="block border border-white/5 rounded-xl overflow-hidden hover:border-primary/30 transition-all group shadow-2xl text-left"
@@ -351,70 +357,6 @@ export default function Home() {
                 Veteran actor Babu Mohan appears as a hyper-realistic 3D digital
                 character; Patela was created entirely through advanced VFX and
                 performance-driven artistry by Nature Guru Creations.
-              </p>
-            </div>
-          </Link>
-          <Link
-            href="/media-announcements"
-            className="block border border-white/5 rounded-xl overflow-hidden hover:border-primary/30 transition-all group shadow-2xl text-left"
-          >
-            <div className="h-48 overflow-hidden relative">
-              <span className="absolute top-4 left-4 bg-cyan-500 text-white type-body font-bold px-3 py-1 rounded-full uppercase tracking-widest shadow-lg z-10">
-                Technology
-              </span>
-              <Image
-                alt="Technology News"
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                data-alt="Technician working on a high-tech visual effects workstation"
-                src="/press2.png"
-                fill
-                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-              />
-            </div>
-            <div className="p-6">
-              <div className="flex justify-between items-center mb-4">
-                <span className="type-body text-gray-700 uppercase tracking-widest">
-                  Sep 28, 2025
-                </span>
-              </div>
-              <h3 className="type-subheading font-bold mb-3 leading-tight group-hover:underline transition-colors">
-                Investing in the Future: NGC Unveils New AI-Driven Pipeline
-              </h3>
-              <p className="type-body text-slate-500 line-clamp-2">
-                Our studio has integrated a proprietary AI workflow to
-                accelerate the rendering of natural hair and fur...
-              </p>
-            </div>
-          </Link>
-          <Link
-            href="/media-announcements"
-            className="block border border-white/5 rounded-xl overflow-hidden hover:border-primary/30 transition-all group shadow-2xl text-left"
-          >
-            <div className="h-48 overflow-hidden relative">
-              <span className="absolute top-4 left-4 bg-cyan-500 text-white type-body font-bold px-3 py-1 rounded-full uppercase tracking-widest shadow-lg z-10">
-                Expeditions
-              </span>
-              <Image
-                alt="Expedition News"
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                data-alt="Wide shot of a mountain range with dramatic clouds"
-                src="/press3.png"
-                fill
-                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-              />
-            </div>
-            <div className="p-6">
-              <div className="flex justify-between items-center mb-4">
-                <span className="type-body text-gray-700 uppercase tracking-widest">
-                  Jan 18, 2026
-                </span>
-              </div>
-              <h3 className="type-subheading font-bold mb-3 leading-tight group-hover:underline transition-colors">
-                Behind the Scenes: 6 Months in the High Andes
-              </h3>
-              <p className="type-body text-slate-500 line-clamp-2">
-                Go behind the camera with our production team as they document
-                the rarest creatures on Earth...
               </p>
             </div>
           </Link>
