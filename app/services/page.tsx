@@ -1,12 +1,14 @@
 import { CheckCircle2 } from "lucide-react";
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageIntro from "@/components/page/PageIntro";
-import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
+import { ngcBrandInHeading } from "@/lib/ngcBrandHeading";
 import PageSection from "@/components/page/PageSection";
 import {
   contentCardClass,
   contentSectionTitleClass,
 } from "@/components/page/contentStyles";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "International VFX / CG Services",
@@ -74,7 +76,7 @@ export default function ServicesPage() {
     <div className="w-full">
       <PageIntro
         kicker="International VFX / CG services"
-        title={ngcBrandLeadingText(
+        title={ngcBrandInHeading(
           "High-end VFX and CG for global films and series",
         )}
         tagline="Delivered through NGC’s integrated production pipeline."
@@ -82,7 +84,9 @@ export default function ServicesPage() {
           src: "/vfxPoster.jpg",
           alt: "VFX and CG work at Nature Guru Creations",
           priority: true,
-          fit: "contain",
+          mode: "responsive",
+          width: 1422,
+          height: 1780,
         }}
       >
         <p>
@@ -145,6 +149,44 @@ export default function ServicesPage() {
         </div>
       </PageSection>
 
+      <PageSection className="border-t border-black/5 pt-0">
+        <h2 className={`${contentSectionTitleClass} mb-10`}>
+          Selected service visuals
+        </h2>
+        <div className="space-y-8">
+          <div className="mx-auto w-3/4 rounded-2xl overflow-hidden border border-black/5 bg-white shadow-[0_20px_60px_rgba(0,0,0,0.06)]">
+            <Image
+              src="/1.png"
+              alt="NGC VFX service showcase visual 1"
+              width={1512}
+              height={870}
+              className="w-full h-auto"
+              sizes="(min-width: 1024px) 52vw, 75vw"
+            />
+          </div>
+          <div className="mx-auto w-3/4 rounded-2xl overflow-hidden border border-black/5 bg-white shadow-[0_20px_60px_rgba(0,0,0,0.06)]">
+            <Image
+              src="/3.png"
+              alt="NGC VFX service showcase visual 3"
+              width={1920}
+              height={1080}
+              className="w-full h-auto"
+              sizes="(min-width: 1024px) 52vw, 75vw"
+            />
+          </div>
+          <div className="mx-auto w-3/4 rounded-2xl overflow-hidden border border-black/5 bg-white shadow-[0_20px_60px_rgba(0,0,0,0.06)]">
+            <Image
+              src="/4.png"
+              alt="NGC VFX service showcase visual 4"
+              width={1920}
+              height={1080}
+              className="w-full h-auto"
+              sizes="(min-width: 1024px) 52vw, 75vw"
+            />
+          </div>
+        </div>
+      </PageSection>
+
       <PageSection>
         <div className={contentCardClass}>
           <h2 className={`${contentSectionTitleClass} mb-6`}>
@@ -169,6 +211,24 @@ export default function ServicesPage() {
               </div>
             ))}
           </div>
+        </div>
+      </PageSection>
+
+      <PageSection className="border-t border-black/5 bg-black/[0.02]">
+        <div className={contentCardClass}>
+          <h2 className={`${contentSectionTitleClass} mb-6`}>
+            Explore related service
+          </h2>
+          <p className="type-body text-justify text-[var(--ngc-text-secondary)] max-w-5xl mb-8">
+            Expand pre-production clarity with our AI-led workflow for script
+            validation and visual decision-making before principal photography.
+          </p>
+          <Link
+            href="/services/ai-filmmaking"
+            className="inline-flex items-center px-3 py-1.5 text-base text-[var(--ngc-text-primary)] hover:text-[var(--ngc-accent)] whitespace-nowrap hover:border-[var(--ngc-accent)] border-2 border-transparent rounded-md transition-all duration-300 ease-in-out hover:scale-105 type-body font-semibold"
+          >
+            Explore AI Filmmaking
+          </Link>
         </div>
       </PageSection>
     </div>

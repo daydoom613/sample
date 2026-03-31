@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import PageIntro from "@/components/page/PageIntro";
-import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
+import { ngcBrandInHeading } from "@/lib/ngcBrandHeading";
 import PageSection from "@/components/page/PageSection";
 import InvestorsForm from "@/components/investors/InvestorsForm";
 
@@ -15,7 +15,7 @@ export default function InvestorsPage() {
     <div className="w-full">
       <PageIntro
         kicker="Expression of interest"
-        title={ngcBrandLeadingText(
+        title={ngcBrandInHeading(
           "Partner. Invest. Create. Collaborate.",
         )}
         image={{

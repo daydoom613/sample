@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { CheckCircle2, Lock, Send } from "lucide-react";
+import { SITE_EMAILS } from "@/lib/emails";
 
 type InterestType = "Producer" | "Investor" | "Artist" | "Studio" | "Other";
 
@@ -176,12 +177,7 @@ export default function InvestorsForm() {
       <div className={`rounded-2xl border border-black/5 bg-white p-10 ${contentCardShadow}`}>
         <h3 className="type-subheading">Contact emails</h3>
         <div className="mt-6 space-y-4">
-          <ContactLine
-            label="Business"
-            value="partnerships@naturegurucreations.com"
-          />
-          <ContactLine label="Careers" value="talent@naturegurucreations.com" />
-          <ContactLine label="Media" value="connect@naturegurucreations.com" />
+          <ContactLine label="Business" value={SITE_EMAILS.business} />
         </div>
       </div>
     </div>

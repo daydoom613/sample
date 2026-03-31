@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import PageIntro from "@/components/page/PageIntro";
-import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
+import { SITE_EMAILS } from "@/lib/emails";
+import { ngcBrandInHeading, ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
 
-const SHOWREEL_MAIL =
-  "mailto:connect@naturegurucreations.com?subject=Showreel%20access%20request";
+const SHOWREEL_MAIL = `mailto:${SITE_EMAILS.creativeCollaborations}?subject=Showreel%20access%20request`;
 
 export default function Home() {
   return (
@@ -14,10 +14,6 @@ export default function Home() {
         kicker="About Us"
         title={ngcBrandLeadingText("Nature Guru Creations")}
         tagline="Technology • Emotion • Story — The Future of Cinema."
-        stats={[
-          { value: "12+", label: "Global Awards" },
-          { value: "500+", label: "VFX Shots Delivered" },
-        ]}
       >
         <p>
           Nature Guru Creations is a{" "}
@@ -90,7 +86,9 @@ export default function Home() {
             href="/global-cinema-creation/ngc-originals"
             className="group rounded-2xl border border-black/5 bg-white p-8 shadow-[0_20px_60px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-transform"
           >
-            <h3 className="type-subheading">NGC Originals</h3>
+            <h3 className="type-subheading ngc-heading-plain">
+              {ngcBrandInHeading("NGC Originals")}
+            </h3>
             <p className="mt-3 type-body">
               In-house productions pushing the boundaries of natural history
               filmmaking.
@@ -135,7 +133,9 @@ export default function Home() {
       <section className="py-24 max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-end mb-12">
           <div>
-            <h2 className="type-heading uppercase mb-2">NGC Originals</h2>
+            <h2 className="type-heading uppercase mb-2 ngc-heading-plain">
+              {ngcBrandInHeading("NGC Originals")}
+            </h2>
             <p className="type-body">
               In-house productions pushing the boundaries of natural history
               filmmaking.
@@ -158,23 +158,6 @@ export default function Home() {
               fill
               sizes="(min-width: 1024px) 33vw, (min-width: 768px) 33vw, 100vw"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-80"></div>
-            <div className="absolute bottom-0 left-0 p-8 text-white">
-              <span className="text-gold type-body font-bold uppercase tracking-widest mb-2 block">
-                Documentary
-              </span>
-              <h3 className="type-subheading font-bold mb-4">
-                The Last Jungle
-              </h3>
-              <div className="flex gap-2">
-                <span className="bg-white/10 backdrop-blur-md type-body px-2 py-1 rounded font-semibold">
-                  HDR
-                </span>
-                <span className="bg-white/10 backdrop-blur-md type-body px-2 py-1 rounded font-semibold">
-                  8K
-                </span>
-              </div>
-            </div>
           </div>
           <div className="group relative rounded-lg overflow-hidden aspect-3/4 cursor-pointer">
             <Image
@@ -185,21 +168,6 @@ export default function Home() {
               fill
               sizes="(min-width: 1024px) 33vw, (min-width: 768px) 33vw, 100vw"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-80"></div>
-            <div className="absolute bottom-0 left-0 p-8 text-white">
-              <span className="text-gold type-body font-bold uppercase tracking-widest mb-2 block">
-                Cinematic Series
-              </span>
-              <h3 className="type-subheading font-bold mb-4">Apex Predator</h3>
-              <div className="flex gap-2">
-                <span className="bg-white/10 backdrop-blur-md type-body px-2 py-1 rounded font-semibold">
-                  HDR
-                </span>
-                <span className="bg-white/10 backdrop-blur-md type-body px-2 py-1 rounded font-semibold">
-                  DOLBY VISION
-                </span>
-              </div>
-            </div>
           </div>
           <div className="group relative rounded-lg overflow-hidden aspect-3/4 cursor-pointer">
             <Image
@@ -210,22 +178,23 @@ export default function Home() {
               fill
               sizes="(min-width: 1024px) 33vw, (min-width: 768px) 33vw, 100vw"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-80"></div>
-            <div className="absolute bottom-0 left-0 p-8 text-white">
-              <span className="text-gold type-body font-bold uppercase tracking-widest mb-2 block">
-                Short Film
-              </span>
-              <h3 className="type-subheading font-bold mb-4">Wild Echoes</h3>
-              <div className="flex gap-2">
-                <span className="bg-white/10 backdrop-blur-md type-body px-2 py-1 rounded font-semibold">
-                  RAW
-                </span>
-                <span className="bg-white/10 backdrop-blur-md type-body px-2 py-1 rounded font-semibold">
-                  ATMOS
-                </span>
-              </div>
-            </div>
           </div>
+        </div>
+        <div className="mt-10 rounded-2xl border border-black/5 bg-black/[0.02] px-6 py-8 text-center md:text-left">
+          <p className="type-body text-[var(--ngc-text-primary)] max-w-3xl mx-auto md:mx-0">
+            Have a story to tell or a slate to build? Reach out for{" "}
+            <strong className="font-semibold">co-productions, partnerships,</strong>{" "}
+            and <strong className="font-semibold">creative enquiries</strong> — we
+            love hearing from producers, writers, and collaborators worldwide.
+          </p>
+          <p className="mt-4 type-body">
+            <a
+              className="font-semibold text-[var(--ngc-accent)] hover:underline"
+              href={`mailto:${SITE_EMAILS.creativeCollaborations}`}
+            >
+              {SITE_EMAILS.creativeCollaborations}
+            </a>
+          </p>
         </div>
         <div className="mt-10 text-center">
           <Link
@@ -239,7 +208,9 @@ export default function Home() {
       <section className="py-24 max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-end mb-12">
           <div>
-            <h2 className="type-heading uppercase mb-2">NGC VFX Services</h2>
+            <h2 className="type-heading uppercase mb-2 ngc-heading-plain">
+              {ngcBrandInHeading("NGC VFX Services")}
+            </h2>
             <p className="type-body max-w-3xl">
               Advanced digital character and CG execution for cinematic storytelling,
               led through NGC&apos;s integrated production pipeline.
@@ -252,28 +223,51 @@ export default function Home() {
             View All
           </Link>
         </div>
-        <div className="grid md:grid-cols-1 gap-8 max-w-md mx-auto">
+        <div className="grid md:grid-cols-2 gap-y-8 gap-x-12 md:gap-x-16 w-full max-w-5xl mx-auto items-start min-w-0">
           <Link
             href="/media-announcements#abadameva-jayathe"
-            className="group relative rounded-lg overflow-hidden aspect-3/4 cursor-pointer"
+            className="group self-start min-w-0 w-full rounded-2xl border border-black/5 bg-white shadow-[0_20px_60px_rgba(0,0,0,0.06)] overflow-hidden hover:-translate-y-1 transition-transform md:order-1"
           >
             <Image
-              alt="Abadameva Jayathe poster — NGC VFX services"
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+              alt="Abadameva Jayathe — NGC VFX services poster"
+              className="block w-full h-auto"
               src="/vfxPoster.jpg"
-              fill
-              sizes="(min-width: 1024px) 33vw, (min-width: 768px) 33vw, 100vw"
+              width={1422}
+              height={1780}
+              sizes="(min-width: 1024px) 42vw, 100vw"
             />
-            <div className="absolute inset-0 bg-linear-to-t from-black via-transparent to-transparent opacity-80"></div>
-            <div className="absolute bottom-0 left-0 p-8 text-white">
-              <span className="text-gold type-body font-bold uppercase tracking-widest mb-2 block">
-                Abadameva Jayathe
-              </span>
-              <h3 className="type-subheading font-bold mb-4 ngc-heading-plain text-white">
-                Hyper-realistic 3D digital character—Patela
-              </h3>
-            </div>
           </Link>
+
+          <div className="flex flex-col gap-6 min-w-0 md:order-2">
+            <Link
+              href="/media-announcements#abadameva-jayathe"
+              className="group self-start w-full rounded-2xl border border-black/5 bg-white shadow-[0_20px_60px_rgba(0,0,0,0.06)] overflow-hidden hover:-translate-y-1 transition-transform"
+            >
+              <Image
+                alt="Abadameva Jayathe — NGC VFX services (CG vs real)"
+                className="block h-auto w-full"
+                src="/vfx_image.png"
+                width={2800}
+                height={1070}
+                sizes="(min-width: 1024px) 42vw, 100vw"
+                priority
+              />
+            </Link>
+            <Link
+              href="/media-announcements#abadameva-jayathe"
+              className="group self-start w-full rounded-2xl border border-black/5 bg-white shadow-[0_20px_60px_rgba(0,0,0,0.06)] overflow-hidden hover:-translate-y-1 transition-transform"
+            >
+              <div className="relative aspect-[4/3]">
+                <Image
+                  alt="Abadameva Jayathe — NGC VFX breakdown"
+                  className="block h-full w-full object-cover"
+                  src="/vfx4.png"
+                  fill
+                  sizes="(min-width: 1024px) 42vw, 100vw"
+                />
+              </div>
+            </Link>
+          </div>
         </div>
         <div className="mt-10 text-center">
           <Link
@@ -326,7 +320,7 @@ export default function Home() {
             Awards, announcements, and behind the scenes.
           </p>
         </div>
-        <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-md">
+        <div className="grid md:grid-cols-2 gap-8">
           <Link
             href="/media-announcements#abadameva-jayathe"
             className="block border border-white/5 rounded-xl overflow-hidden hover:border-primary/30 transition-all group shadow-2xl text-left"
@@ -357,6 +351,37 @@ export default function Home() {
                 Veteran actor Babu Mohan appears as a hyper-realistic 3D digital
                 character; Patela was created entirely through advanced VFX and
                 performance-driven artistry by Nature Guru Creations.
+              </p>
+            </div>
+          </Link>
+          <Link
+            href="/media-announcements#abadameva-jayathe-interview"
+            className="block border border-white/5 rounded-xl overflow-hidden hover:border-primary/30 transition-all group shadow-2xl text-left"
+          >
+            <div className="relative h-56 overflow-hidden bg-slate-200/90 md:h-60">
+              <span className="absolute top-4 left-4 z-10 rounded-full bg-cyan-500 px-3 py-1 type-body font-bold uppercase tracking-widest text-white shadow-lg">
+                Interview
+              </span>
+              <Image
+                alt="Abadameva Jayathe interview visual"
+                className="object-cover transition-opacity duration-500 group-hover:opacity-90"
+                src="/interview_2.jpeg"
+                fill
+                sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+              />
+            </div>
+            <div className="p-6">
+              <div className="flex justify-between items-center mb-4">
+                <span className="type-body text-gray-600 uppercase tracking-widest">
+                  Mar 2026
+                </span>
+              </div>
+              <h3 className="type-subheading font-bold mb-3 leading-tight group-hover:underline transition-colors">
+                Abadameva Jayathe — cast interview highlights
+              </h3>
+              <p className="type-body text-slate-500 line-clamp-2">
+                Key interview moments and behind-the-scenes visuals from
+                Abadameva Jayathe.
               </p>
             </div>
           </Link>

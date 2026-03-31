@@ -1,7 +1,7 @@
 import { ArrowLeft, ArrowRight, Box, Play, Sparkles } from "lucide-react";
 import type { Metadata } from "next";
 import PageIntro from "@/components/page/PageIntro";
-import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
+import { ngcBrandInHeading } from "@/lib/ngcBrandHeading";
 import { contentSectionTitleClass } from "@/components/page/contentStyles";
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default function CollaborationsPage() {
     <>
       <PageIntro
         kicker="The creative portal"
-        title={ngcBrandLeadingText("Shape the future of storytelling")}
+        title={ngcBrandInHeading("Shape the future of storytelling")}
         tagline="Partnership • Vision • Craft — built together."
         image={{
           src: "/c1.png",

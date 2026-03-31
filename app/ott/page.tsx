@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageIntro from "@/components/page/PageIntro";
-import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
+import { ngcBrandInHeading } from "@/lib/ngcBrandHeading";
 import PageSection from "@/components/page/PageSection";
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default function OttPage() {
     <div className="w-full">
       <PageIntro
         kicker="Distribution"
-        title={ngcBrandLeadingText("IPs, distribution & OTT")}
+        title={ngcBrandInHeading("IPs, distribution & OTT")}
         tagline="Originals • Partner IPs • Global reach."
         image={{
           src: "/poster_2.png",
@@ -31,12 +31,6 @@ export default function OttPage() {
       </PageIntro>
 
       <PageSection className="pt-0 pb-28 flex flex-wrap gap-4">
-        <Link
-          href="/investors"
-          className="inline-flex rounded-lg border border-gray-300 px-6 py-3 type-body font-semibold text-[var(--ngc-text-primary)] hover:border-[var(--ngc-accent)] transition-colors"
-        >
-          Investors &amp; partners
-        </Link>
         <Link
           href="/contact"
           className="inline-flex rounded-lg border border-gray-300 px-6 py-3 type-body font-semibold text-[var(--ngc-text-primary)] hover:border-[var(--ngc-accent)] transition-colors"

@@ -66,20 +66,20 @@ export default function NavBar() {
 
   return (
     <nav className="bg-white/75 backdrop-blur-md w-full flex items-center justify-between px-7 py-5 text-base text-gray-600 gap-7">
-      <Link href="/" className="flex items-center gap-3.5 shrink-0">
+      <Link href="/" className="flex items-start gap-4 shrink-0">
         <Image
           src="/Logo (2).png"
           alt="NGC"
-          width={62}
-          height={62}
+          width={80}
+          height={80}
           priority
         />
-        <div className="leading-[1.05]">
-          <div className="text-[2.05rem] font-black tracking-tight text-gray-900 drop-shadow-[0_4px_10px_rgba(0,0,0,0.28)]">
-            <span className="text-[#049518]">N</span>
-            <span className="text-[#EA2F2F]">GC</span>
+        <div className="h-20 flex flex-col justify-between leading-none py-0.5">
+          <div className="text-[3.4rem] font-black tracking-tight text-gray-900 drop-shadow-[0_4px_10px_rgba(0,0,0,0.28)]">
+            <span className="text-[var(--ngc-brand-first)]">N</span>
+            <span className="text-[var(--ngc-brand-rest)]">GC</span>
           </div>
-          <div className="text-[13px] font-semibold uppercase tracking-[0.06em] text-gray-500 mt-1">
+          <div className="text-[13px] font-semibold uppercase tracking-[0.06em] text-gray-500">
             The Science of Storytelling
           </div>
         </div>

@@ -21,6 +21,13 @@ type Props = {
     alt: string;
     priority?: boolean;
     fit?: "cover" | "contain";
+    /**
+     * - fill: uses a fixed aspect container (default, matches existing pages)
+     * - responsive: preserves the image's intrinsic aspect ratio using width/height
+     */
+    mode?: "fill" | "responsive";
+    width?: number;
+    height?: number;
   };
 };
 
@@ -71,16 +78,32 @@ export default function PageIntro({
         {image ? (
           <div className="relative group">
             <div className="absolute -inset-1 bg-linear-to-r from-primary to-gold rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000" />
-            <div className="relative rounded-xl overflow-hidden aspect-video shadow-2xl bg-black/5">
-              <Image
-                src={image.src}
-                alt={image.alt}
-                className={`${image.fit === "contain" ? "object-contain p-2" : "object-cover"} object-center`}
-                fill
-                sizes="(min-width: 1024px) 50vw, 100vw"
-                priority={image.priority}
-              />
-            </div>
+            {image.mode === "responsive" && image.width && image.height ? (
+              <div className="relative rounded-xl overflow-hidden shadow-2xl bg-black/5">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={image.width}
+                  height={image.height}
+                  className="w-full h-auto object-contain"
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  priority={image.priority}
+                />
+              </div>
+            ) : (
+              <div className="relative rounded-xl overflow-hidden aspect-video shadow-2xl bg-black/5">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  className={`${
+                    image.fit === "contain" ? "object-contain p-2" : "object-cover"
+                  } object-center`}
+                  fill
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  priority={image.priority}
+                />
+              </div>
+            )}
           </div>
         ) : null}
       </div>

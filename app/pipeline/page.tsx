@@ -9,7 +9,7 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageIntro from "@/components/page/PageIntro";
-import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
+import { ngcBrandInHeading } from "@/lib/ngcBrandHeading";
 import PageSection from "@/components/page/PageSection";
 import {
   contentCardClass,
@@ -77,7 +77,7 @@ export default function PipelinePage() {
     <div className="w-full">
       <PageIntro
         kicker="Technology & pipeline"
-        title={ngcBrandLeadingText("NGC Technology & VFX Pipeline")}
+        title={ngcBrandInHeading("NGC Technology & VFX Pipeline")}
         tagline="Film-grade realism at optimized cost and time."
         image={{
           src: "/imgSpl.avif",

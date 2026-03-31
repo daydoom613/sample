@@ -1,13 +1,14 @@
 import { CheckCircle2, Mail, MapPin } from "lucide-react";
 import type { Metadata } from "next";
 import PageIntro from "@/components/page/PageIntro";
-import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
+import { ngcBrandInHeading } from "@/lib/ngcBrandHeading";
 import PageSection from "@/components/page/PageSection";
 import {
   contentCardClass,
   contentSectionTitleClass,
 } from "@/components/page/contentStyles";
 import CareersInterestForm from "@/components/career/CareersInterestForm";
+import { SITE_EMAILS } from "@/lib/emails";
 
 export const metadata: Metadata = {
   title: "Careers & Talent Hub",
@@ -47,14 +48,14 @@ export default function CareerPage() {
     <div className="w-full">
       <PageIntro
         kicker="Careers & talent hub"
-        title={ngcBrandLeadingText("Join NGC’s global artist network")}
+        title={ngcBrandInHeading("Join NGC’s global artist network")}
         tagline="Technology • Emotion • Story — build with us."
         stats={[
           { value: "Global", label: "Remote-friendly roles" },
           { value: "Pipeline", label: "ACES + AI-augmented tools" },
         ]}
         image={{
-          src: "/orgImg.png",
+          src: "/carrer.png",
           alt: "NGC careers — creative and technical teams",
           priority: true,
         }}
@@ -132,17 +133,17 @@ export default function CareerPage() {
                     Careers:{" "}
                     <a
                       className="font-semibold text-[var(--ngc-accent)] hover:underline"
-                      href="mailto:talent@naturegurucreations.com"
+                      href={`mailto:${SITE_EMAILS.careers}`}
                     >
-                      talent@naturegurucreations.com
+                      {SITE_EMAILS.careers}
                     </a>
                     <br />
-                    Collaborations:{" "}
+                    Creative collaborations:{" "}
                     <a
                       className="font-semibold text-[var(--ngc-accent)] hover:underline"
-                      href="mailto:connect@naturegurucreations.com"
+                      href={`mailto:${SITE_EMAILS.creativeCollaborations}`}
                     >
-                      connect@naturegurucreations.com
+                      {SITE_EMAILS.creativeCollaborations}
                     </a>
                   </div>
                 </div>

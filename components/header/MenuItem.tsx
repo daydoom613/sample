@@ -22,8 +22,8 @@ export default function MenuItem({ item, level = 0 }: Props) {
       const rest = part.slice(1);
       return (
         <span key={`${part}-${idx}`}>
-          <span className="text-[#07961B]">{first}</span>
-          <span className="text-[#F87171]">{rest}</span>
+          <span className="text-[var(--ngc-brand-first)]">{first}</span>
+          <span className="text-[var(--ngc-brand-rest)]">{rest}</span>
         </span>
       );
     });

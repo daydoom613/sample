@@ -7,12 +7,13 @@ import {
 } from "lucide-react";
 import type { Metadata } from "next";
 import PageIntro from "@/components/page/PageIntro";
-import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
+import { ngcBrandInHeading } from "@/lib/ngcBrandHeading";
 import PageSection from "@/components/page/PageSection";
 import {
   contentCardClass,
   contentSectionTitleClass,
 } from "@/components/page/contentStyles";
+import { SITE_EMAILS } from "@/lib/emails";
 
 export const metadata: Metadata = {
   title: "Partner IPs",
@@ -64,7 +65,7 @@ export default function IpPartnersPage() {
     <>
       <PageIntro
         kicker="Partner IPs / collaboration"
-        title={ngcBrandLeadingText("Nurturing your intellectual property")}
+        title={ngcBrandInHeading("Nurturing your intellectual property")}
         tagline="Executive creative excellence — state-of-the-art CG execution."
         image={{
           src: "/poster_1.png",
@@ -124,7 +125,7 @@ export default function IpPartnersPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="mailto:partnerships@naturegurucreations.com?subject=IP%20Collaboration"
+              href={`mailto:${SITE_EMAILS.business}?subject=IP%20Collaboration`}
               className="w-full sm:w-auto bg-[var(--ngc-accent)] hover:opacity-95 text-white px-10 py-4 rounded-xl type-body font-semibold transition-opacity"
             >
               Start a collaboration

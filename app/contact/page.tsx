@@ -1,32 +1,27 @@
 import type { Metadata } from "next";
 import { Mail, MapPin } from "lucide-react";
 import PageIntro from "@/components/page/PageIntro";
-import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
+import { ngcBrandInHeading } from "@/lib/ngcBrandHeading";
 import PageSection from "@/components/page/PageSection";
 import { contentCardClass } from "@/components/page/contentStyles";
+import { SITE_EMAILS } from "@/lib/emails";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Reach Nature Guru Creations for business, careers, media, and partnerships.",
+    "Reach Nature Guru Creations for business, careers, and creative collaborations.",
 };
 
 const ADDRESS =
   "G2, Elite Residency, Road no 27, Alkapur Township, Neknampur Village, Hyderabad, Telangana - 500089, India";
-
-const EMAILS = {
-  business: "partnerships@naturegurucreations.com",
-  careers: "talent@naturegurucreations.com",
-  media: "connect@naturegurucreations.com",
-};
 
 export default function ContactPage() {
   return (
     <div className="w-full">
       <PageIntro
         kicker="Contact"
-        title={ngcBrandLeadingText("Get in touch")}
-        tagline="Business • Careers • Media — we’re listening."
+        title={ngcBrandInHeading("Get in touch")}
+        tagline="Business • Careers • Creative collaborations — we’re listening."
         image={{
           src: "/about.avif",
           alt: "Nature Guru Creations — contact the studio",
@@ -56,9 +51,9 @@ export default function ContactPage() {
                 <br />
                 <a
                   className="font-semibold text-[var(--ngc-text-primary)] hover:underline"
-                  href={`mailto:${EMAILS.business}`}
+                  href={`mailto:${SITE_EMAILS.business}`}
                 >
-                  {EMAILS.business}
+                  {SITE_EMAILS.business}
                 </a>
               </div>
               <div>
@@ -68,21 +63,21 @@ export default function ContactPage() {
                 <br />
                 <a
                   className="font-semibold text-[var(--ngc-text-primary)] hover:underline"
-                  href={`mailto:${EMAILS.careers}`}
+                  href={`mailto:${SITE_EMAILS.careers}`}
                 >
-                  {EMAILS.careers}
+                  {SITE_EMAILS.careers}
                 </a>
               </div>
               <div>
                 <span className="text-gray-500 text-xs font-semibold uppercase tracking-wider">
-                  Media
+                  Creative collaborations
                 </span>
                 <br />
                 <a
                   className="font-semibold text-[var(--ngc-text-primary)] hover:underline"
-                  href={`mailto:${EMAILS.media}`}
+                  href={`mailto:${SITE_EMAILS.creativeCollaborations}`}
                 >
-                  {EMAILS.media}
+                  {SITE_EMAILS.creativeCollaborations}
                 </a>
               </div>
             </div>
@@ -96,9 +91,9 @@ export default function ContactPage() {
             variables). Until then, email{" "}
             <a
               className="font-semibold text-[var(--ngc-accent)] hover:underline"
-              href={`mailto:${EMAILS.media}`}
+              href={`mailto:${SITE_EMAILS.creativeCollaborations}`}
             >
-              {EMAILS.media}
+              {SITE_EMAILS.creativeCollaborations}
             </a>{" "}
             for links and updates.
           </p>

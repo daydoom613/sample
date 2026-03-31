@@ -7,16 +7,12 @@ import {
   Palette,
   Video,
 } from "lucide-react";
+import { SITE_EMAILS } from "@/lib/emails";
+import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
 import { getSocialLinks } from "@/lib/social";
 
 const ADDRESS =
   "G2, Elite Residency, Road no 27, Alkapur Township, Neknampur Village, Hyderabad, Telangana - 500089, India";
-
-const EMAILS = {
-  business: "partnerships@naturegurucreations.com",
-  careers: "talent@naturegurucreations.com",
-  media: "connect@naturegurucreations.com",
-};
 
 const iconFor = (label: string) => {
   switch (label) {
@@ -41,10 +37,15 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="space-y-4">
           <div className="flex items-center gap-3">
-            <h2 className="text-xl font-bold tracking-tight uppercase leading-tight">
-              <span>Nature Guru Creations —</span>
+            <h2 className="text-xl font-bold tracking-tight uppercase leading-tight ngc-heading-plain">
+              <span>
+                {ngcBrandLeadingText("Nature Guru Creations")}
+                <span className="text-[var(--ngc-text-primary)]">—</span>
+              </span>
               <br />
-              <span>The Science of Storytelling</span>
+              <span className="text-[var(--ngc-text-primary)]">
+                The Science of Storytelling
+              </span>
             </h2>
           </div>
           <p className="max-w-sm text-sm text-justify">
@@ -70,27 +71,27 @@ export default function Footer() {
                   Business:{" "}
                   <a
                     className="font-bold hover:underline"
-                    href={`mailto:${EMAILS.business}`}
+                    href={`mailto:${SITE_EMAILS.business}`}
                   >
-                    {EMAILS.business}
+                    {SITE_EMAILS.business}
                   </a>
                 </div>
                 <div>
                   Careers:{" "}
                   <a
                     className="font-bold hover:underline"
-                    href={`mailto:${EMAILS.careers}`}
+                    href={`mailto:${SITE_EMAILS.careers}`}
                   >
-                    {EMAILS.careers}
+                    {SITE_EMAILS.careers}
                   </a>
                 </div>
                 <div>
-                  Media:{" "}
+                  Creative collaborations:{" "}
                   <a
                     className="font-bold hover:underline"
-                    href={`mailto:${EMAILS.media}`}
+                    href={`mailto:${SITE_EMAILS.creativeCollaborations}`}
                   >
-                    {EMAILS.media}
+                    {SITE_EMAILS.creativeCollaborations}
                   </a>
                 </div>
               </div>

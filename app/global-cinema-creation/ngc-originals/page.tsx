@@ -10,7 +10,7 @@ import type { LucideIcon } from "lucide-react";
 import Link from "next/link";
 import type { Metadata } from "next";
 import PageIntro from "@/components/page/PageIntro";
-import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
+import { ngcBrandInHeading } from "@/lib/ngcBrandHeading";
 import PageSection from "@/components/page/PageSection";
 import {
   contentCardClass,
@@ -27,12 +27,15 @@ export default function NgcOriginalsPage() {
   return (
     <>
       <PageIntro
-        title={ngcBrandLeadingText("What defines an NGC Original")}
+        title={ngcBrandInHeading("What defines an NGC Original")}
         tagline="Bridging nature and high-end filmmaking through our production DNA."
         image={{
-          src: "/orgImg.png",
+          src: "/originals1.jpg",
           alt: "NGC Originals — epic natural history and cinematic storytelling",
           priority: true,
+          mode: "responsive",
+          width: 736,
+          height: 735,
         }}
       >
         <p>

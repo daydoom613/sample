@@ -2,7 +2,7 @@ import Link from "next/link";
 import { SquareArrowOutUpRight } from "lucide-react";
 import type { Metadata } from "next";
 import PageIntro from "@/components/page/PageIntro";
-import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
+import { ngcBrandInHeading } from "@/lib/ngcBrandHeading";
 import PageSection from "@/components/page/PageSection";
 import { contentSectionTitleClass } from "@/components/page/contentStyles";
 
@@ -17,7 +17,7 @@ export default function GlobalCinemaCreationPage() {
     <>
       <PageIntro
         kicker="Global cinema creation"
-        title={ngcBrandLeadingText("The heart of NGC filmmaking")}
+        title={ngcBrandInHeading("The heart of NGC filmmaking")}
         tagline="Stories that travel — continent to continent."
         image={{
           src: "/hero-global.avif",
@@ -50,8 +50,8 @@ export default function GlobalCinemaCreationPage() {
               <span className="text-white type-body font-bold uppercase tracking-widest mb-2">
                 Internal dev
               </span>
-              <h3 className="type-subheading font-bold mb-3">
-                NGC Originals
+              <h3 className="type-subheading font-bold mb-3 ngc-heading-plain text-white">
+                {ngcBrandInHeading("NGC Originals")}
               </h3>
               <p className="text-slate-300 type-body leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Stories created in-house that showcase the unique creativity and

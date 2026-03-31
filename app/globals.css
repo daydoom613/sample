@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --ngc-accent: #f87171;
+  --ngc-accent: #fb2c36;
   --ngc-brand-first: #049518;
-  --ngc-brand-rest: #f87171;
+  --ngc-brand-rest: #fb2c36;
   --ngc-text-primary: #424240;
   --ngc-text-secondary: #424240;
 }
@@ -74,6 +74,7 @@ h6 {
   letter-spacing: -0.02em;
   font-family: var(--font-poppins);
   color: var(--ngc-text-primary);
+  text-transform: none;
 }
 
 .type-subheading {
@@ -82,6 +83,7 @@ h6 {
   font-weight: 600;
   font-family: var(--font-poppins);
   color: var(--ngc-text-primary);
+  text-transform: none;
 }
 
 .type-body {

@@ -39,6 +39,7 @@ export const NAV_MENU: MenuType[] = [
     title: "VFX SERVICES",
     href: "/services",
     subMenu: [
+      { title: "AI Filmmaking", href: "/services/ai-filmmaking" },
       { title: "NGC Technology & VFX Pipeline", href: "/pipeline" },
       { title: "International VFX/CG services", href: "/services" },
     ],

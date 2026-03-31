@@ -1,7 +1,7 @@
 import { CheckCircle2 } from "lucide-react";
 import type { Metadata } from "next";
 import PageIntro from "@/components/page/PageIntro";
-import { ngcBrandLeadingText } from "@/lib/ngcBrandHeading";
+import { ngcBrandInHeading } from "@/lib/ngcBrandHeading";
 import PageSection from "@/components/page/PageSection";
 import {
   contentCardClass,
@@ -37,7 +37,7 @@ export default function ScienceOfStorytellingPage() {
   return (
     <div className="w-full">
       <PageIntro
-        title={ngcBrandLeadingText("NGC — The Science of Storytelling")}
+        title={ngcBrandInHeading("NGC — The Science of Storytelling")}
         tagline="Technology • Emotion • Story — precision and creativity together."
         stats={[
           { value: "Method", label: "Structured workflows" },
@@ -83,7 +83,11 @@ export default function ScienceOfStorytellingPage() {
       <PageSection className="border-t border-black/5 bg-black/[0.02]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
-            <h2 className={`${contentSectionTitleClass} mb-6`}>About NGC</h2>
+            <h2
+              className={`${contentSectionTitleClass} mb-6 ngc-heading-plain`}
+            >
+              {ngcBrandInHeading("About NGC")}
+            </h2>
             <p className="type-body text-justify text-[var(--ngc-text-secondary)]">
               Founded in 2024, Nature Guru Creations (NGC) is a high-end visual
               effects and full-CG filmmaking studio driven by a passionate core
