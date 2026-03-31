@@ -15,12 +15,15 @@ export default function OttPage() {
     <div className="w-full">
       <PageIntro
         kicker="Distribution"
-        title={ngcBrandInHeading("IPs, distribution & OTT")}
+        title={ngcBrandInHeading("IP's, distribution & OTT")}
         tagline="Originals • Partner IPs • Global reach."
         image={{
-          src: "/poster_2.png",
+          src: "/ott.jpg",
           alt: "NGC originals and distribution partnerships",
           priority: true,
+          mode: "responsive",
+          width: 736,
+          height: 854,
         }}
       >
         <p>

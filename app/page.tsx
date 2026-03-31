@@ -74,7 +74,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <h2 className="type-heading uppercase mb-2">What We Do</h2>
-            <p className="type-body max-w-2xl">
+            <p className="type-body max-w-none whitespace-nowrap overflow-hidden text-ellipsis">
               A complete, end-to-end studio ecosystem where story, technology,
               and execution move together.
             </p>
@@ -183,16 +183,23 @@ export default function Home() {
         <div className="mt-10 rounded-2xl border border-black/5 bg-black/[0.02] px-6 py-8 text-center md:text-left">
           <p className="type-body text-[var(--ngc-text-primary)] max-w-3xl mx-auto md:mx-0">
             Have a story to tell or a slate to build? Reach out for{" "}
-            <strong className="font-semibold">co-productions, partnerships,</strong>{" "}
-            and <strong className="font-semibold">creative enquiries</strong> — we
-            love hearing from producers, writers, and collaborators worldwide.
+            <strong className="font-semibold">creative enquiries</strong> — we love
+            hearing from producers, writers, and collaborators worldwide.
           </p>
-          <p className="mt-4 type-body">
+          <p className="mt-6 type-body">
             <a
               className="font-semibold text-[var(--ngc-accent)] hover:underline"
               href={`mailto:${SITE_EMAILS.creativeCollaborations}`}
             >
               {SITE_EMAILS.creativeCollaborations}
+            </a>
+          </p>
+          <p className="mt-6 type-body">
+            <a
+              className="font-semibold text-[var(--ngc-accent)] hover:underline"
+              href={`mailto:${SITE_EMAILS.business}`}
+            >
+              {SITE_EMAILS.business}
             </a>
           </p>
         </div>
@@ -211,7 +218,7 @@ export default function Home() {
             <h2 className="type-heading uppercase mb-2 ngc-heading-plain">
               {ngcBrandInHeading("NGC VFX Services")}
             </h2>
-            <p className="type-body max-w-3xl">
+            <p className="type-body max-w-3xl md:whitespace-nowrap">
               Advanced digital character and CG execution for cinematic storytelling,
               led through NGC&apos;s integrated production pipeline.
             </p>

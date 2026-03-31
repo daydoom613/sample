@@ -37,7 +37,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="space-y-4">
           <div className="flex items-center gap-3">
-            <h2 className="text-xl font-bold tracking-tight uppercase leading-tight ngc-heading-plain">
+            <h2 className="text-xl font-bold tracking-tight leading-tight ngc-heading-plain">
               <span>
                 {ngcBrandLeadingText("Nature Guru Creations")}
                 <span className="text-[var(--ngc-text-primary)]">—</span>

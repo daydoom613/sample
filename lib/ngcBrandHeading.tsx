@@ -21,12 +21,24 @@ function toHeadingCase(input: string): string {
     .map((token) => {
       if (!token || /^\s+$/.test(token)) return token;
       if (token === "NGC") return "NGC";
+      if (token === "OTT") return "OTT";
+      if (token === "IP") return "IP";
+      if (token === "IP's" || token === "IP’S") return "IP's";
       // Preserve punctuation around the word, e.g. "NGC—" won't happen here since we split on spaces,
       // but handle "NGC’s" / "NGC's" and trailing punctuation like "," "." ":".
       const m = token.match(/^([^A-Za-z0-9]*)([A-Za-z0-9]+)([^A-Za-z0-9]*)$/);
       if (!m) return token;
       const [, pre, core, post] = m;
-      if (core.toUpperCase() == "NGC") return `${pre}NGC${post}`;
+      const upper = core.toUpperCase();
+      if (upper === "NGC") return `${pre}NGC${post}`;
+      if (upper === "OTT") return `${pre}OTT${post}`;
+      if (upper === "IP" && (post.startsWith("'s") || post.startsWith("’s"))) {
+        return `${pre}IP's${post.slice(2)}`;
+      }
+      if (/^[A-Z0-9]{2,6}$/.test(core)) {
+        // Preserve short acronyms like VFX, CG, AI, HDR, 8K, ACES, etc.
+        return `${pre}${core}${post}`;
+      }
       const lower = core.toLowerCase();
       return `${pre}${lower.charAt(0).toUpperCase()}${lower.slice(1)}${post}`;
     })

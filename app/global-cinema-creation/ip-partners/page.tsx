@@ -68,9 +68,12 @@ export default function IpPartnersPage() {
         title={ngcBrandInHeading("Nurturing your intellectual property")}
         tagline="Executive creative excellence — state-of-the-art CG execution."
         image={{
-          src: "/poster_1.png",
+          src: "/ip.jpeg",
           alt: "Partner IPs and creative execution at NGC",
           priority: true,
+          mode: "responsive",
+          width: 736,
+          height: 736,
         }}
       >
         <p>
